@@ -12,7 +12,10 @@
   "editorMenuMouseButton": 1.0,
   "editorRotateMouseButton": 2.0,
   "safetyProfiles": {},
-  "editorRecentProjects": [],
+  "editorRecentProjects": [
+    "C:\\Users\\wladi\\curseforge\\minecraft\\Instances\\Test\\goofy ahh.cpmproject"
+  ],
   "serverSettings": {},
-  "keybinds": {}
+  "keybinds": {},
+  "editorUVAreaAlpha": 0.8
 }

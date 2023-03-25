@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "ae2:block/spatial_anchor"
+    },
+    "powered=true": {
+      "model": "ae2:block/spatial_anchor_on"
+    }
+  }
+}
