@@ -1,0 +1,18 @@
+[00:15:31.578][INFO]: Successfully injected RecipeFS file system
+[00:15:31.664][INFO]: Successfully identified and loaded plugin jeitweaker:common
+[00:15:31.760][INFO]: Successfully identified and loaded plugin crafttweaker:builtin
+[00:15:31.763][INFO]: Successfully identified and loaded plugin crafttweaker:builtin_forge
+[00:15:31.767][INFO]: Successfully identified and loaded plugin createtweaker:main
+[00:15:31.856][INFO]: Identified JeiTweaker plugin 'jeitweaker:forge': loading scheduled
+[00:15:31.857][INFO]: Identified JeiTweaker plugin 'jeitweaker:common': loading scheduled
+[00:15:31.869][INFO]: JEITweaker Environmental Check: the combination of mods [jei] is fully supported
+[00:15:31.870][INFO]: Running JeiTweaker plugin initialization
+[00:15:31.905][INFO]: JeiTweaker plugin initialization completed successfully
+[00:15:33.579][INFO]: The following mods have explicit CraftTweaker support through the default plugin:
+[00:15:33.580][INFO]: - 'crafttweaker' at version '10.1.36'
+[00:15:33.580][INFO]: - 'createtweaker' at version '3.0.0.3'
+[00:15:33.580][INFO]: - 'jeitweaker' at version '4.0.11'
+[00:15:44.969][INFO]: Started loading scripts for loader 'initialize'
+[00:15:45.669][INFO]: Compiling and executing scripts
+[00:15:45.737][INFO]: Successfully initialized modules [crafttweaker, expansions]
+[00:15:45.886][INFO]: Execution for loader 'initialize' completed successfully

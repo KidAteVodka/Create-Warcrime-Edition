@@ -1,0 +1,17 @@
+
+#Client Settings
+
+#Folders
+ClientSide\defaultconfigs
+ClientSide\localconfigs
+ClientSide\logs
+ClientSide\saves
+ClientSide\schematics
+ClientSide\shaderpacks
+
+#Files
+ClientSide\options.txt
+ClientSide\Quark Programmer Art.zip
+
+#Extension
+.marker

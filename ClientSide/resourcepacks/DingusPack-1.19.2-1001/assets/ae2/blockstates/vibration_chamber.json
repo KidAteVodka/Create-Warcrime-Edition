@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "ae2:block/vibration_chamber"
+    },
+    "active=true": {
+      "model": "ae2:block/vibration_chamber_on"
+    }
+  }
+}
