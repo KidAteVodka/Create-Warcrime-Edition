@@ -8,10 +8,14 @@ ClientSide/logs
 ClientSide/saves
 ClientSide/schematics
 ClientSide/shaderpacks
+ClientSide/Distant_Horizons_server_data
+ClientSide/crash-reports
 
 #Files
 ClientSide/options.txt
-ClientSide/Quark Programmer Art.zip
+ClientSide/resourcepacks/Quark Programmer Art.zip
+ClientSide/servers.*
 
 #Extension
 ClientSide/*.marker
+*.log

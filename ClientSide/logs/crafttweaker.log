@@ -1,18 +1,176 @@
-[00:15:31.578][INFO]: Successfully injected RecipeFS file system
-[00:15:31.664][INFO]: Successfully identified and loaded plugin jeitweaker:common
-[00:15:31.760][INFO]: Successfully identified and loaded plugin crafttweaker:builtin
-[00:15:31.763][INFO]: Successfully identified and loaded plugin crafttweaker:builtin_forge
-[00:15:31.767][INFO]: Successfully identified and loaded plugin createtweaker:main
-[00:15:31.856][INFO]: Identified JeiTweaker plugin 'jeitweaker:forge': loading scheduled
-[00:15:31.857][INFO]: Identified JeiTweaker plugin 'jeitweaker:common': loading scheduled
-[00:15:31.869][INFO]: JEITweaker Environmental Check: the combination of mods [jei] is fully supported
-[00:15:31.870][INFO]: Running JeiTweaker plugin initialization
-[00:15:31.905][INFO]: JeiTweaker plugin initialization completed successfully
-[00:15:33.579][INFO]: The following mods have explicit CraftTweaker support through the default plugin:
-[00:15:33.580][INFO]: - 'crafttweaker' at version '10.1.36'
-[00:15:33.580][INFO]: - 'createtweaker' at version '3.0.0.3'
-[00:15:33.580][INFO]: - 'jeitweaker' at version '4.0.11'
-[00:15:44.969][INFO]: Started loading scripts for loader 'initialize'
-[00:15:45.669][INFO]: Compiling and executing scripts
-[00:15:45.737][INFO]: Successfully initialized modules [crafttweaker, expansions]
-[00:15:45.886][INFO]: Execution for loader 'initialize' completed successfully
+[00:56:01.162][INFO]: Successfully injected RecipeFS file system
+[00:56:01.239][INFO]: Successfully identified and loaded plugin jeitweaker:common
+[00:56:01.279][INFO]: Successfully identified and loaded plugin crafttweaker:builtin
+[00:56:01.283][INFO]: Successfully identified and loaded plugin crafttweaker:builtin_forge
+[00:56:01.287][INFO]: Successfully identified and loaded plugin createtweaker:main
+[00:56:01.397][INFO]: Identified JeiTweaker plugin 'jeitweaker:forge': loading scheduled
+[00:56:01.398][INFO]: Identified JeiTweaker plugin 'jeitweaker:common': loading scheduled
+[00:56:01.409][INFO]: JEITweaker Environmental Check: the combination of mods [jei] is fully supported
+[00:56:01.409][INFO]: Running JeiTweaker plugin initialization
+[00:56:01.453][INFO]: JeiTweaker plugin initialization completed successfully
+[00:56:02.797][INFO]: The following mods have explicit CraftTweaker support through the default plugin:
+[00:56:02.798][INFO]: - 'crafttweaker' at version '10.1.36'
+[00:56:02.798][INFO]: - 'createtweaker' at version '3.0.0.3'
+[00:56:02.798][INFO]: - 'jeitweaker' at version '4.0.11'
+[00:56:14.286][INFO]: Started loading scripts for loader 'initialize'
+[00:56:14.945][INFO]: Compiling and executing scripts
+[00:56:15.027][INFO]: Successfully initialized modules [crafttweaker, expansions]
+[00:56:15.190][INFO]: Execution for loader 'initialize' completed successfully
+[01:12:32.896][INFO]: Started loading scripts for loader 'crafttweaker'
+[01:12:32.913][INFO]: Compiling and executing scripts
+[01:12:33.260][INFO]: Successfully initialized modules [mods, crafttweaker, expansions]
+[01:12:33.261][INFO]: Loading file 'custom Crafting Recipes.zs' with priority 0
+[01:12:33.274][INFO]: Loading file 'removed (CraftingRecipe) items.zs' with priority 0
+[01:12:33.378][INFO]: Hiding ingredient <item:computercraft:pocket_computer_normal> from JEI
+[01:12:33.382][INFO]: Hiding ingredient <item:computercraft:pocket_computer_normal>.withTag({Upgrade: "computercraft:wireless_modem_advanced"}) from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:pocket_computer_normal>.withTag({Upgrade: "computercraft:wireless_modem_normal"}) from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:pocket_computer_normal>.withTag({Upgrade: "computercraft:speaker"}) from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:pocket_computer_advanced> from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:pocket_computer_advanced>.withTag({Upgrade: "computercraft:wireless_modem_advanced"}) from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:pocket_computer_advanced>.withTag({Upgrade: "computercraft:wireless_modem_normal"}) from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:pocket_computer_advanced>.withTag({Upgrade: "computercraft:speaker"}) from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:turtle_normal> from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:turtle_normal>.withTag({RightUpgrade: "minecraft:diamond_shovel"}) from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:turtle_normal>.withTag({RightUpgrade: "minecraft:crafting_table"}) from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:turtle_normal>.withTag({RightUpgrade: "minecraft:diamond_axe"}) from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:turtle_normal>.withTag({RightUpgrade: "minecraft:diamond_hoe"}) from JEI
+[01:12:33.383][INFO]: Hiding ingredient <item:computercraft:turtle_normal>.withTag({RightUpgrade: "computercraft:wireless_modem_advanced"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_normal>.withTag({RightUpgrade: "computercraft:wireless_modem_normal"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_normal>.withTag({RightUpgrade: "computercraft:speaker"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_normal>.withTag({RightUpgrade: "minecraft:diamond_pickaxe"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_normal>.withTag({RightUpgrade: "minecraft:diamond_sword"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_advanced> from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_advanced>.withTag({RightUpgrade: "minecraft:diamond_shovel"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_advanced>.withTag({RightUpgrade: "minecraft:crafting_table"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_advanced>.withTag({RightUpgrade: "minecraft:diamond_axe"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_advanced>.withTag({RightUpgrade: "minecraft:diamond_hoe"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_advanced>.withTag({RightUpgrade: "computercraft:wireless_modem_advanced"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_advanced>.withTag({RightUpgrade: "computercraft:wireless_modem_normal"}) from JEI
+[01:12:33.384][INFO]: Hiding ingredient <item:computercraft:turtle_advanced>.withTag({RightUpgrade: "computercraft:speaker"}) from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:computercraft:turtle_advanced>.withTag({RightUpgrade: "minecraft:diamond_pickaxe"}) from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:computercraft:turtle_advanced>.withTag({RightUpgrade: "minecraft:diamond_sword"}) from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:crafting_unit> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:crafting_accelerator> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:1k_crafting_storage> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:4k_crafting_storage> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:16k_crafting_storage> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:64k_crafting_storage> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:256k_crafting_storage> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:crafting_monitor> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:pattern_provider> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:cell_component_256k> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:cell_component_64k> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:cell_component_16k> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:item_storage_cell_256k> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:item_storage_cell_64k> from JEI
+[01:12:33.385][INFO]: Hiding ingredient <item:ae2:item_storage_cell_16k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:fluid_storage_cell_256k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:fluid_storage_cell_64k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:fluid_storage_cell_16k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:fluid_storage_cell_4k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:fluid_storage_cell_1k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:portable_item_cell_256k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:portable_item_cell_64k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:portable_item_cell_16k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:portable_item_cell_4k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:portable_item_cell_1k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:portable_fluid_cell_256k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:portable_fluid_cell_64k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:portable_fluid_cell_16k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:portable_fluid_cell_4k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:portable_fluid_cell_1k> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:molecular_assembler> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:charger> from JEI
+[01:12:33.386][INFO]: Hiding ingredient <item:ae2:wireless_access_point> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:security_station> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:wireless_terminal> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:wireless_crafting_terminal> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:wireless_booster> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:entropy_manipulator> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:fluid_cell_housing> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:matter_cannon> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:sky_stone_tank> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:crank> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:energy_cell> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:ae2:dense_energy_cell> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:diamond_backpack> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:netherite_backpack> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:stack_upgrade_tier_1> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:stack_upgrade_tier_2> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:stack_upgrade_tier_3> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:stack_upgrade_tier_4> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:smelting_upgrade> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:auto_smelting_upgrade> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:pickup_upgrade> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:advanced_pickup_upgrade> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:magnet_upgrade> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:advanced_magnet_upgrade> from JEI
+[01:12:33.387][INFO]: Hiding ingredient <item:sophisticatedbackpacks:feeding_upgrade> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:sophisticatedbackpacks:advanced_feeding_upgrade> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:sophisticatedbackpacks:void_upgrade> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:sophisticatedbackpacks:advanced_void_upgrade> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:sophisticatedbackpacks:inception_upgrade> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:sophisticatedbackpacks:auto_smoking_upgrade> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:sophisticatedbackpacks:blasting_upgrade> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:sophisticatedbackpacks:auto_blasting_upgrade> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:sophisticatedbackpacks:advanced_tool_swapper_upgrade> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:grapplemod:repeller> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:grapplemod:forcefieldupgradeitem> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:grapplemod:magnetupgradeitem> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:grapplemod:staffupgradeitem> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:grapplemod:swingupgradeitem> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:grapplemod:throwupgradeitem> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:grapplemod:rocketupgradeitem> from JEI
+[01:12:33.388][INFO]: Hiding ingredient <item:grapplemod:limitsupgradeitem> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:grapplemod:block_grapple_modifier> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:grapplemod:launcheritem> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:briefcase> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:codebreaker> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:bucket_f_lava> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:bucket_f_water> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:keycard_lv1> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:keycard_lv2> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:keycard_lv3> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:keycard_lv4> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:keycard_lv5> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:keypad_item> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:keypad_chest> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:limited_use_keycard> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:portable_tune_player> from JEI
+[01:12:33.389][INFO]: Hiding ingredient <item:securitycraft:remote_access_mine> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:remote_access_sentry> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:rift_stabilizer> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:sc_manual> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:sentry> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:sonic_security_system> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:universal_block_reinforcer_lvl1> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:universal_block_reinforcer_lvl2> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:universal_block_reinforcer_lvl3> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:universal_block_remover> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:universal_key_changer> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:universal_owner_changer> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:wire_cutters> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:blacklist_module> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:disguise_module> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:harming_module> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:smart_module> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:storage_module> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:speed_module> from JEI
+[01:12:33.390][INFO]: Hiding ingredient <item:securitycraft:block_change_detector> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:block_pocket_manager> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:cage_trap> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:keypad_frame> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:keycard_reader> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:keypad> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:keypad_furnace> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:keypad_smoker> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:keypad_blast_furnace> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:laser_block> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:motion_activated_light> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:portable_radar> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:projector> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:protecto> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:retinal_scanner> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:trophy_system> from JEI
+[01:12:33.391][INFO]: Hiding ingredient <item:securitycraft:username_logger> from JEI
+[01:12:33.391][INFO]: Execution for loader 'crafttweaker' completed successfully
