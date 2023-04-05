@@ -10,6 +10,8 @@ ClientSide/schematics
 ClientSide/shaderpacks
 ClientSide/Distant_Horizons_server_data
 ClientSide/crash-reports
+Serverside/logs
+Serverside/crash-reports
 
 #Files
 ClientSide/options.txt
@@ -19,4 +21,4 @@ ClientSide/servers.*
 #Extension
 ClientSide/*.marker
 *.log
-*.gz
+
