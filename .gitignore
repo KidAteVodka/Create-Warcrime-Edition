@@ -19,3 +19,4 @@ ClientSide/servers.*
 #Extension
 ClientSide/*.marker
 *.log
+*.gz
