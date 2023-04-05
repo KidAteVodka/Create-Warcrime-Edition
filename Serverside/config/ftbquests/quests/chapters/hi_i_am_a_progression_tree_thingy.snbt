@@ -1,0 +1,79 @@
+{
+	id: "2366824F31E5B5DF"
+	group: ""
+	order_index: 0
+	filename: "hi_i_am_a_progression_tree_thingy"
+	title: "Hi I am a progression Tree thingy"
+	icon: "extendedgears:large_iron_cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -17.0d
+			y: -1.0d
+			subtitle: "Hello There"
+			id: "5088DDD1EA5E2988"
+			tasks: [{
+				id: "77B3B7FDDB051261"
+				type: "dimension"
+				dimension: "minecraft:overworld"
+			}]
+			rewards: [{
+				id: "6F580597882F97AA"
+				type: "item"
+				item: "ftbquests:book"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			id: "76ECF32E78511064"
+			tasks: [{
+				id: "7DFD1C9EF8A764BC"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.5d
+			id: "527D02AB76966E7F"
+			tasks: [{
+				id: "53A33717B17A7DB4"
+				type: "item"
+				item: "ae2:logic_processor"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			id: "78D4BBF6CE995525"
+			tasks: [{
+				id: "39EF54E5063BDFA9"
+				type: "item"
+				item: "ae2:calculation_processor"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			id: "3967AF885D51C840"
+			tasks: [{
+				id: "1B2E094C83E90DD2"
+				type: "item"
+				item: "ae2:engineering_processor"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.0d
+			id: "2674C04D443BD6B2"
+			tasks: [{
+				id: "0635690A58A33C4E"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

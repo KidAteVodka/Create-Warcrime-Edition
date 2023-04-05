@@ -1,0 +1,20 @@
+{
+  "allowMovement": {
+    "mezz.jei.gui.recipes.RecipesGui": true,
+    "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": true,
+    "net.mehvahdjukaar.supplementaries.client.screens.PresentBlockScreen": true,
+    "net.mehvahdjukaar.supplementaries.client.screens.SackScreen": true,
+    "net.mehvahdjukaar.supplementaries.client.screens.NoticeBoardScreen": true,
+    "com.tom.cpm.client.GuiImpl": true,
+    "net.minecraft.client.gui.screens.ReceivingLevelScreen": true,
+    "dan200.computercraft.client.gui.GuiComputer": true
+  },
+  "hideBackground": {
+    "mezz.jei.gui.recipes.RecipesGui": true,
+    "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": true,
+    "net.mehvahdjukaar.supplementaries.client.screens.PresentBlockScreen": true,
+    "net.mehvahdjukaar.supplementaries.client.screens.SackScreen": true,
+    "net.mehvahdjukaar.supplementaries.client.screens.NoticeBoardScreen": true,
+    "dan200.computercraft.client.gui.GuiComputer": true
+  }
+}
