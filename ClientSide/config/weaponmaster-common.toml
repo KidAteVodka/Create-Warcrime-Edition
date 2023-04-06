@@ -1,23 +1,23 @@
 
 [model_options]
 	#Slot 1
-	s1 = true
+	s1 = false
 	#Slot 2
-	s2 = true
+	s2 = false
 	#Slot 3
-	s3 = true
+	s3 = false
 	#Slot 4
-	s4 = true
+	s4 = false
 	#Slot 5
-	s5 = true
+	s5 = false
 	#Slot 6
-	s6 = true
+	s6 = false
 	#Slot 7
-	s7 = true
+	s7 = false
 	#Slot 8
-	s8 = true
+	s8 = false
 	#Slot 9
-	s9 = true
+	s9 = false
 	#Shield
 	shield = true
 	#Banner
