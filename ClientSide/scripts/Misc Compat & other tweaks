@@ -1,0 +1,52 @@
+import crafttweaker.api.ingredient.IIngredient;
+import crafttweaker.api.item.IItemStack;
+import crafttweaker.api.tag.MCTag;
+import mods.create.CompactingManager;
+import mods.create.PressingManager;
+import mods.create.MixingManager;
+
+//General Item Recipe changes/unionisation	
+
+//Plates
+ //Aluminium Plate
+craftingTable.remove(<item:immersiveengineering:plate_aluminum>);
+<recipetype:create:pressing>.addRecipe("aluminium_plate", [<item:immersiveengineering:plate_aluminum> % 100], <tag:items:forge:ingots/aluminum>, 200);
+ //Lead Plate
+craftingTable.remove(<item:immersiveengineering:plate_lead>);
+<recipetype:create:pressing>.addRecipe("lead_plate", [<item:immersiveengineering:plate_lead> % 100], <tag:items:forge:ingots/lead>, 200);
+ //Silver Plate
+craftingTable.remove(<item:immersiveengineering:plate_silver>);
+<recipetype:create:pressing>.addRecipe("silver_plate", [<item:immersiveengineering:plate_silver> % 100], <tag:items:forge:ingots/silver>, 200);
+ //Nickel Plate
+craftingTable.remove(<item:immersiveengineering:plate_nickel>);
+<recipetype:create:pressing>.addRecipe("nickel_plate", [<item:immersiveengineering:plate_nickel> % 100], <tag:items:forge:ingots/nickel>, 200);
+ //Uranium_Plate
+craftingTable.remove(<item:immersiveengineering:plate_uranium>);
+<recipetype:create:pressing>.addRecipe("uranium_plate", [<item:immersiveengineering:plate_uranium> % 100], <tag:items:forge:ingots/uranium>, 200);
+ //Constantan Plate
+craftingTable.remove(<item:immersiveengineering:plate_constantan>);
+<recipetype:create:pressing>.addRecipe("constantan_plate", [<item:immersiveengineering:plate_constantan> % 100], <item:immersiveengineering:ingot_constantan>, 200);
+ //Electrum Plate
+craftingTable.remove(<item:immersiveengineering:plate_electrum>);
+<recipetype:create:pressing>.addRecipe("electrum_plate", [<item:immersiveengineering:plate_electrum> % 100], <item:immersiveengineering:ingot_electrum>, 200);
+ //Steel Plate
+craftingTable.remove(<item:immersiveengineering:plate_steel>);
+
+ //Cast Iron
+<recipetype:create:compacting>.remove(<item:createbigcannons:cast_iron_ingot>);
+
+ //Steel
+
+
+ 
+ //Stews
+craftingTable.remove(<item:minecraft:beetroot_soup>);
+craftingTable.remove(<item:minecraft:mushroom_stew>);
+craftingTable.remove(<item:minecraft:rabbit_stew>);
+
+
+
+
+//Hide unnecessary JEI things
+
+
