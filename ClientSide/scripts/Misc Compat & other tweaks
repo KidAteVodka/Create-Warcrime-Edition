@@ -32,6 +32,9 @@ craftingTable.remove(<item:immersiveengineering:plate_electrum>);
  //Steel Plate
 craftingTable.remove(<item:immersiveengineering:plate_steel>);
 
+
+ 
+
  //Cast Iron
 <recipetype:create:compacting>.remove(<item:createbigcannons:cast_iron_ingot>);
 

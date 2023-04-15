@@ -8,6 +8,9 @@ import mods.jeitweaker.Jei;
 
 //Mod Item Crafting Removal thingies
 
+//Immersive Engineering
+ //EVERYTHING
+ recipes.removeByModid("immersiveengineering");
 
 //ComputerCraft: Tweaked
  //Pocket PCs
@@ -386,70 +389,4 @@ craftingTable.remove(<item:davebuildingmod:blue_light_off>);
  
 
 
-//Immersive Engineering
- //Garden Cloche
-craftingTable.remove(<item:immersiveengineering:cloche>);
- Jei.hideIngredient(<item:immersiveengineering:cloche>);
- //Fluid Pump
-craftingTable.remove(<item:immersiveengineering:fluid_pump>);
- Jei.hideIngredient(<item:immersiveengineering:fluid_pump>);
- //Charging Station
-craftingTable.remove(<item:immersiveengineering:charging_station>);
- Jei.hideIngredient(<item:immersiveengineering:charging_station>);
- //basically the majority of power generation thingies
-craftingTable.remove(<item:immersiveengineering:waterwheel_segment>);
- Jei.hideIngredient(<item:immersiveengineering:waterwheel_segment>);
-craftingTable.remove(<item:immersiveengineering:windmill_blade>);
- Jei.hideIngredient(<item:immersiveengineering:windmill_blade>);
-craftingTable.remove(<item:immersiveengineering:windmill_sail>);
- Jei.hideIngredient(<item:immersiveengineering:windmill_sail>);
-craftingTable.remove(<item:immersiveengineering:dynamo>);
- Jei.hideIngredient(<item:immersiveengineering:dynamo>);
-craftingTable.remove(<item:immersiveengineering:thermoelectric_generator>);
- Jei.hideIngredient(<item:immersiveengineering:thermoelectric_generator>);
- //Tesla coil
-craftingTable.remove(<item:immersiveengineering:tesla_coil>);
- Jei.hideIngredient(<item:immersiveengineering:tesla_coil>);
- //Storage Crates
-craftingTable.remove(<item:immersiveengineering:crate>);
- Jei.hideIngredient(<item:immersiveengineering:crate>);
- //all of the belts
-craftingTable.remove(<item:immersiveengineering:conveyor_basic>);
- Jei.hideIngredient(<item:immersiveengineering:conveyor_basic>);
-craftingTable.remove(<item:immersiveengineering:conveyor_basic>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
- Jei.hideIngredient(<item:immersiveengineering:conveyor_basic>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
-craftingTable.remove(<item:immersiveengineering:conveyor_redstone>);
- Jei.hideIngredient(<item:immersiveengineering:conveyor_redstone>);
-craftingTable.remove(<item:immersiveengineering:conveyor_dropper>);
- Jei.hideIngredient(<item:immersiveengineering:conveyor_dropper>);
-craftingTable.remove(<item:immersiveengineering:conveyor_dropper>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
- Jei.hideIngredient(<item:immersiveengineering:conveyor_dropper>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
-craftingTable.remove(<item:immersiveengineering:conveyor_vertical>);
- Jei.hideIngredient(<item:immersiveengineering:conveyor_vertical>);
-craftingTable.remove(<item:immersiveengineering:conveyor_vertical>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
- Jei.hideIngredient(<item:immersiveengineering:conveyor_vertical>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
-craftingTable.remove(<item:immersiveengineering:conveyor_splitter>);
- Jei.hideIngredient(<item:immersiveengineering:conveyor_splitter>);
-craftingTable.remove(<item:immersiveengineering:conveyor_splitter>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
- Jei.hideIngredient(<item:immersiveengineering:conveyor_splitter>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
-craftingTable.remove(<item:immersiveengineering:conveyor_extract>);
- Jei.hideIngredient(<item:immersiveengineering:conveyor_extract>);
-craftingTable.remove(<item:immersiveengineering:conveyor_extract>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
- Jei.hideIngredient(<item:immersiveengineering:conveyor_extract>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
- //Press Molds
-craftingTable.remove(<item:immersiveengineering:mold_plate>);
- Jei.hideIngredient(<item:immersiveengineering:mold_plate>);
-craftingTable.remove(<item:immersiveengineering:mold_gear>);
- Jei.hideIngredient(<item:immersiveengineering:mold_gear>);
-craftingTable.remove(<item:immersiveengineering:mold_rod>);
- Jei.hideIngredient(<item:immersiveengineering:mold_rod>);
-craftingTable.remove(<item:immersiveengineering:mold_bullet_casing>);
- Jei.hideIngredient(<item:immersiveengineering:mold_bullet_casing>);
-craftingTable.remove(<item:immersiveengineering:mold_wire>);
- Jei.hideIngredient(<item:immersiveengineering:mold_wire>);
-craftingTable.remove(<item:immersiveengineering:mold_packing_4>);
- Jei.hideIngredient(<item:immersiveengineering:mold_packing_4>);
-craftingTable.remove(<item:immersiveengineering:mold_packing_9>);
- Jei.hideIngredient(<item:immersiveengineering:mold_packing_9>);
-craftingTable.remove(<item:immersiveengineering:mold_unpacking>);
- Jei.hideIngredient(<item:immersiveengineering:mold_unpacking>);
+

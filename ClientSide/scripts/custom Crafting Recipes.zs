@@ -88,19 +88,19 @@ craftingTable.addShaped("better_crad", <item:ae2:advanced_card> * 2, [
  //1K ME Storage Component
 craftingTable.remove(<item:ae2:cell_component_1k>);
 craftingTable.addShaped("cell_1k", <item:ae2:cell_component_1k>, [
-    [<item:createaddition:copper_wire>, <item:minecraft:popped_chorus_fruit>, <item:createbigcannons:nethersteel_ingot>],
+    [<item:immersiveengineering:component_electronic>, <item:minecraft:popped_chorus_fruit>, <item:createbigcannons:nethersteel_ingot>],
     [<tag:items:ae2:all_certus_quartz>, <item:ae2:logic_processor>, <tag:items:ae2:all_certus_quartz>],
     [<item:createbigcannons:nethersteel_ingot>, <item:minecraft:netherite_scrap>, <item:createaddition:capacitor>]]);
  //4K ME Storage Component
 craftingTable.remove(<item:ae2:cell_component_4k>);
 craftingTable.addShaped("slaps_top_of_cell_.you_can_hold_so_much_item_in_this_thing", <item:ae2:cell_component_4k>, [
-    [<item:createaddition:copper_wire>, <item:ae2:calculation_processor>, <item:minecraft:popped_chorus_fruit>],
+    [<item:immersiveengineering:component_electronic_adv>, <item:ae2:calculation_processor>, <item:minecraft:popped_chorus_fruit>],
     [<item:ae2:cell_component_1k>, <item:create:sturdy_sheet>, <item:ae2:cell_component_1k>],
     [<item:createbigcannons:nethersteel_nugget>, <item:ae2:cell_component_1k>, <item:createbigcannons:nethersteel_nugget>]]);
  //2^3 Spatial Storage Component
 craftingTable.remove(<item:ae2:spatial_cell_component_2>);
 craftingTable.addShaped("there_is_nothing_here", <item:ae2:spatial_cell_component_2>, [
-    [<item:createaddition:copper_wire>, <item:ae2:fluix_pearl>, <item:minecraft:popped_chorus_fruit>],
+    [<item:immersiveengineering:component_electronic_adv>, <item:ae2:fluix_pearl>, <item:minecraft:popped_chorus_fruit>],
     [<item:ae2:fluix_pearl>, <item:ae2:engineering_processor>, <item:ae2:fluix_pearl>],
     [<item:createbigcannons:nethersteel_ingot>, <item:minecraft:netherite_scrap>, <item:minecraft:echo_shard>]]);
  //16^3 Spatial Storage Component
@@ -135,7 +135,7 @@ craftingTable.addShaped("weird_thing_that_makes_objects_disappear", <item:ae2:an
     [<item:create:iron_sheet>, <item:minecraft:netherite_scrap>, <item:minecraft:air>]]);
  //Inscriber																																			 
 craftingTable.remove(<item:ae2:inscriber>);
-<recipetype:create:mechanical_crafting>.addRecipe("double_press_goes_bonk_thingy", <item:ae2:inscriber>, [[<item:create:brass_ingot>, <item:create:precision_mechanism>, <item:create:mechanical_press>, <item:create:electron_tube>, <item:create:brass_ingot>], 
+<recipetype:create:mechanical_crafting>.addRecipe("double_press_goes_bonk_thingy", <item:ae2:inscriber>, [[<item:create:brass_ingot>, <item:create:precision_mechanism>, <item:create:mechanical_press>, <item:immersiveengineering:component_electronic_adv>, <item:create:brass_ingot>], 
                                                                                                           [<item:ae2:fluix_glass_cable>, <item:minecraft:netherite_scrap>, <item:minecraft:netherite_scrap>, <item:minecraft:netherite_scrap>, <item:ae2:fluix_glass_cable>],
 																				                          [<item:create:brass_ingot>, <item:create:sturdy_sheet>, <item:create:mechanical_press>, <item:createaddition:copper_spool>, <item:create:brass_ingot>]]);
  //Energy Acceptor
@@ -196,6 +196,54 @@ craftingTable.remove(<item:computercraft:computer_advanced>);
                                                                                                                    [<item:create:electron_tube>, <item:ae2:engineering_processor>, <item:ae2:engineering_processor>, <item:computercraft:monitor_advanced>],
 																				                                   [<item:create:electron_tube>, <item:ae2:logic_processor>, <item:ae2:logic_processor>, <item:createaddition:capacitor>]]);
 
+
+
+//Immersive Engineering
+ //Phenolic Resin
+<recipetype:create:filling>.addRecipe("duroplast_create", <item:immersiveengineering:plate_duroplast>, <item:minecraft:paper>, <fluid:immersiveengineering:phenolic_resin> * 300, 200);
+ //Wires & Stuff
+ //LV Wire Coil
+craftingTable.addShaped("low_zappy_wires", <item:immersiveengineering:wirecoil_copper>, [
+    [<item:minecraft:air>, <item:createaddition:copper_wire>, <item:minecraft:air>],
+    [<item:createaddition:copper_wire>, <item:minecraft:stick>, <item:createaddition:copper_wire>],
+    [<item:minecraft:air>, <item:createaddition:copper_wire>, <item:minecraft:air>]]);
+ //Insulated LV Wire Coil
+craftingTable.addShaped("mehdi_safe_low_zappy_wires", <item:immersiveengineering:wirecoil_copper_ins> * 4, [
+    [<item:immersiveengineering:hemp_fabric>, <item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:hemp_fabric>],
+    [<item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:hemp_fabric>, <item:immersiveengineering:wirecoil_copper>],
+    [<item:immersiveengineering:hemp_fabric>, <item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:hemp_fabric>]]);
+ //MV Wire Coil
+craftingTable.addShaped("slightly_more_zappy_wires", <item:immersiveengineering:wirecoil_electrum>, [
+    [<item:minecraft:air>, <item:immersiveengineering:wire_electrum>, <item:minecraft:air>],
+    [<item:immersiveengineering:wire_electrum>, <item:minecraft:stick>, <item:immersiveengineering:wire_electrum>],
+    [<item:minecraft:air>, <item:immersiveengineering:wire_electrum>, <item:minecraft:air>]]);
+ //Insulated MV Wire Coil
+craftingTable.addShaped("mehdi_safe_slightly_more_zappy_wires", <item:immersiveengineering:wirecoil_electrum_ins> * 4, [
+    [<item:immersiveengineering:hemp_fabric>, <item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:hemp_fabric>],
+    [<item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:hemp_fabric>, <item:immersiveengineering:wirecoil_electrum>],
+    [<item:immersiveengineering:hemp_fabric>, <item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:hemp_fabric>]]);
+ //HV Wire Coil
+craftingTable.addShaped("very_zappy_wires", <item:immersiveengineering:wirecoil_steel>, [
+    [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>],
+    [<item:immersiveengineering:wire_aluminum>, <item:minecraft:stick>, <item:immersiveengineering:wire_aluminum>],
+    [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>]]);
+ //hEMP Rope Coil
+craftingTable.addShaped("long_swingy_thing", <item:immersiveengineering:wirecoil_structure_rope>, [
+    [<item:minecraft:air>, <item:immersiveengineering:hemp_fiber>, <item:minecraft:air>],
+    [<item:immersiveengineering:hemp_fiber>, <item:minecraft:stick>, <item:immersiveengineering:hemp_fiber>],
+    [<item:minecraft:air>, <item:immersiveengineering:hemp_fiber>, <item:minecraft:air>]]);
+//Steel Cable Coil
+craftingTable.addShaped("very_non_felxible_swingy_thing", <item:immersiveengineering:wirecoil_structure_steel>, [
+    [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>],
+    [<item:immersiveengineering:wire_steel>, <item:minecraft:stick>, <item:immersiveengineering:wire_steel>],
+    [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>]]);
+//Redstone Wire Coil
+craftingTable.addShaped("very_non_felxible_swingy_thing", <item:immersiveengineering:wirecoil_redstone>, [
+    [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
+    [<item:minecraft:redstone>, <item:minecraft:stick>, <item:minecraft:redstone>],
+    [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>]]);
+
+	
 
 
 //[]Sophisticated Backpacks
@@ -322,8 +370,18 @@ craftingTable.remove(<item:securitycraft:camera_monitor>);
 																										                                      [<item:createaddition:zinc_sheet>, <item:create:framed_glass_pane>, <item:computercraft:monitor_advanced>, <item:minecraft:note_block>, <item:createaddition:zinc_sheet>],
 																				                                                              [<item:minecraft:air>, <item:minecraft:polished_blackstone_button>, <item:minecraft:polished_blackstone_button>, <item:minecraft:polished_blackstone_button>, <item:minecraft:air>]]);
 
-//Please don´t ask me what I was on when I came up with the names for the recipies..
-//(just to be sure. I was joking, I´m fine)
+
+
+//Supplementaries
+ //Rope
+craftingTable.remove(<item:supplementaries:rope>);
+craftingTable.addShaped("swingy_thing", <item:supplementaries:rope>, [
+    [<item:immersiveengineering:hemp_fiber>, <item:archbows:flax_string>],
+    [<item:immersiveengineering:hemp_fiber>, <item:archbows:flax_string>],
+    [<item:immersiveengineering:hemp_fiber>, <item:archbows:flax_string>]]);
+	
+//Please don´t ask me what I was on when I came up with some of the names for the recipies..
+//(just to be safe. I was joking, I´m fine)
 
 
 
