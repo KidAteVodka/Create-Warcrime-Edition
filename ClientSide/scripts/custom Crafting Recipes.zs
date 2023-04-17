@@ -238,7 +238,7 @@ craftingTable.addShaped("very_non_felxible_swingy_thing", <item:immersiveenginee
     [<item:immersiveengineering:wire_steel>, <item:minecraft:stick>, <item:immersiveengineering:wire_steel>],
     [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>]]);
 //Redstone Wire Coil
-craftingTable.addShaped("very_non_felxible_swingy_thing", <item:immersiveengineering:wirecoil_redstone>, [
+craftingTable.addShaped("red_swingy_thing", <item:immersiveengineering:wirecoil_redstone>, [
     [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
     [<item:minecraft:redstone>, <item:minecraft:stick>, <item:minecraft:redstone>],
     [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>]]);

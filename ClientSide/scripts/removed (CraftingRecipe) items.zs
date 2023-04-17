@@ -8,9 +8,14 @@ import mods.jeitweaker.Jei;
 
 //Mod Item Crafting Removal thingies
 
+//Vanilla
+
+
+
 //Immersive Engineering
  //EVERYTHING
  recipes.removeByModid("immersiveengineering");
+
 
 //ComputerCraft: Tweaked
  //Pocket PCs
