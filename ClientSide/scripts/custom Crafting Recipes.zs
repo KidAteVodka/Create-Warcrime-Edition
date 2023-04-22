@@ -35,6 +35,12 @@ craftingTable.addShaped("weeeeeeeeeeee", <item:create:weighted_ejector>, [
     [<item:minecraft:air>, <item:create:golden_sheet>, <item:minecraft:air>],
     [<item:createbigcannons:recoil_spring>, <item:create:depot>, <item:createbigcannons:recoil_spring>],
     [<item:minecraft:air>, <tag:items:forge:cogwheels>, <item:minecraft:air>]]);
+ //Electron Tube
+craftingTable.remove(<item:create:electron_tube>);
+craftingTable.addShaped("ebut-nortcele", <item:create:electron_tube>, [
+    [<item:minecraft:air>, <item:create:polished_rose_quartz>],
+    [<item:createaddition:copper_wire>, <item:immersiveengineering:plate_nickel>],
+    [<item:minecraft:air>, <item:create:iron_sheet>]]);
 	
 
 
@@ -229,9 +235,9 @@ craftingTable.addShaped("very_zappy_wires", <item:immersiveengineering:wirecoil_
     [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>]]);
  //hEMP Rope Coil
 craftingTable.addShaped("long_swingy_thing", <item:immersiveengineering:wirecoil_structure_rope>, [
-    [<item:minecraft:air>, <item:immersiveengineering:hemp_fiber>, <item:minecraft:air>],
-    [<item:immersiveengineering:hemp_fiber>, <item:minecraft:stick>, <item:immersiveengineering:hemp_fiber>],
-    [<item:minecraft:air>, <item:immersiveengineering:hemp_fiber>, <item:minecraft:air>]]);
+    [<item:minecraft:air>, <item:supplementaries:rope>, <item:minecraft:air>],
+    [<item:supplementaries:rope>, <item:minecraft:stick>, <item:supplementaries:rope>],
+    [<item:minecraft:air>, <item:supplementaries:rope>, <item:minecraft:air>]]);
 //Steel Cable Coil
 craftingTable.addShaped("very_non_felxible_swingy_thing", <item:immersiveengineering:wirecoil_structure_steel>, [
     [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>],
@@ -242,6 +248,85 @@ craftingTable.addShaped("red_swingy_thing", <item:immersiveengineering:wirecoil_
     [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
     [<item:minecraft:redstone>, <item:minecraft:stick>, <item:minecraft:redstone>],
     [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>]]);
+//Electronic Component
+craftingTable.addShaped("electronic_doodad", <item:immersiveengineering:component_electronic>, [
+    [<item:minecraft:quartz>, <item:minecraft:redstone>],
+    [<item:create:brass_sheet>, <tag:items:handcrafted:boards>]]);
+//Advanced Electronic Component
+craftingTable.addShaped("better_electronic_doodad", <item:immersiveengineering:component_electronic_adv>, [
+    [<item:create:electron_tube>, <item:createaddition:gold_wire>, <item:create:electron_tube>],
+    [<item:minecraft:air>, <item:immersiveengineering:plate_duroplast>, <item:minecraft:air>]]);
+//Tough Fabric
+craftingTable.addShaped("fabric_thing", <item:immersiveengineering:hemp_fabric>, [
+    [<item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>],
+    [<item:immersiveengineering:hemp_fiber>, <item:minecraft:stick>, <item:immersiveengineering:hemp_fiber>],
+    [<item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>]]);
+//Engineer´s Wire Cutters
+craftingTable.addShaped("snippy_thing", <item:immersiveengineering:wirecutter>, [
+    [<item:minecraft:air>, <item:alloyed:steel_sheet>, <item:minecraft:air>],
+    [<item:alloyed:steel_sheet>, <item:alloyed:steel_nugget>, <item:minecraft:stick>],
+    [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]]);
+//Engineer´s Screwdriver
+craftingTable.addShaped("pokey_thing", <item:immersiveengineering:screwdriver>, [
+    [<item:minecraft:air>, <item:immersiveengineering:stick_steel>],
+    [<item:minecraft:stick>, <item:minecraft:air>]]);
+//Engineer´s Hammer
+craftingTable.addShaped("this_is_not_jonathan", <item:immersiveengineering:hammer>, [
+    [<item:alloyed:steel_sheet>, <item:alloyed:steel_ingot>],
+    [<item:minecraft:stick>, <item:minecraft:air>]]);
+//Incandescent Light Bulb
+craftingTable.addShaped("the_better_candles", <item:immersiveengineering:light_bulb>, [
+    [<item:minecraft:air>, <item:minecraft:glass>, <item:minecraft:air>],
+    [<item:minecraft:glass>, <item:immersiveengineering:plate_nickel>, <item:minecraft:glass>],
+    [<item:minecraft:air>, <item:create:copper_sheet>, <item:minecraft:air>]]);
+//Powered Lantern
+craftingTable.addShaped("let_there_be_light", <item:immersiveengineering:electric_lantern>, [
+    [<item:createdeco:cast_iron_sheet>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_sheet>],
+    [<item:create:framed_glass_pane>, <item:immersiveengineering:light_bulb>, <item:create:framed_glass_pane>],
+    [<item:createdeco:cast_iron_sheet>, <item:createaddition:copper_wire>, <item:createdeco:cast_iron_sheet>]]);
+//Fluid Pipe
+craftingTable.addShaped("metal_tube_thing", <item:immersiveengineering:fluid_pipe> * 4, [
+    [<item:create:iron_sheet>],
+    [<item:minecraft:iron_ingot>],
+    [<item:create:iron_sheet>]]);
+//Copper Coil Block
+craftingTable.addShaped("thats_a_lotta_copper", <item:immersiveengineering:coil_lv>, [
+    [<item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:wirecoil_copper>],
+    [<item:immersiveengineering:wirecoil_copper>, <item:alloyed:steel_ingot>, <item:immersiveengineering:wirecoil_copper>],
+    [<item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:wirecoil_copper>]]);
+//Electrum Coil Block
+craftingTable.addShaped("thats_a_lotta_electrum", <item:immersiveengineering:coil_mv>, [
+    [<item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:wirecoil_electrum>],
+    [<item:immersiveengineering:wirecoil_electrum>, <item:alloyed:steel_ingot>, <item:immersiveengineering:wirecoil_electrum>],
+    [<item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:wirecoil_electrum>]]);
+//High-Voltage Coil Block
+craftingTable.addShaped("thats_a_lotta_zappy_generating_stuff", <item:immersiveengineering:coil_hv>, [
+    [<item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>],
+    [<item:immersiveengineering:wirecoil_steel>, <item:alloyed:steel_ingot>, <item:immersiveengineering:wirecoil_steel>],
+    [<item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>]]);
+//Logic Unit
+<recipetype:create:mechanical_crafting>.addRecipe("1plus1equals3", <item:immersiveengineering:logic_unit>, [[<item:minecraft:air>, <item:alloyed:steel_sheet>, <item:immersiveengineering:component_electronic>, <item:alloyed:steel_sheet>, <item:minecraft:air>], 
+                                                                                                            [<item:create:golden_sheet>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:golden_sheet>],
+																											[<tag:items:minecraft:planks>, <item:create:electron_tube>, <item:immersiveengineering:wirecoil_copper>, <item:create:electron_tube>, <tag:items:minecraft:planks>],
+																											[<item:create:golden_sheet>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:golden_sheet>],
+																				                            [<item:minecraft:air>, <item:alloyed:steel_sheet>, <item:immersiveengineering:component_electronic>, <item:alloyed:steel_sheet>, <item:minecraft:air>]]);
+//Floodlight
+<recipetype:create:mechanical_crafting>.addRecipe("huge_blindy_thing", <item:immersiveengineering:floodlight>, [[<item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>, <item:immersiveengineering:wirecoil_copper>, <item:alloyed:steel_ingot>], 
+                                                                                                                [<item:create:framed_glass_pane>, <item:immersiveengineering:plate_aluminum>, <item:immersiveengineering:light_bulb>, <item:minecraft:iron_ingot>, <item:alloyed:steel_ingot>],
+																											    [<item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>, <item:immersiveengineering:wirecoil_copper>, <item:minecraft:air>],
+																				                                [<item:minecraft:air>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:minecraft:air>]]);
+//Transformer
+<recipetype:create:mechanical_crafting>.addRecipe("no_not_that_kind_of_transformer", <item:immersiveengineering:transformer>, [[<item:immersiveengineering:connector_mv>, <item:createdeco:cast_iron_sheet>, <item:immersiveengineering:connector_lv>], 
+                                                                                                                               [<item:alloyed:steel_ingot>, <item:immersiveengineering:coil_mv>, <item:alloyed:steel_ingot>],
+																											                   [<item:createdeco:cast_iron_ingot>, <item:minecraft:iron_block>, <item:createdeco:cast_iron_ingot>],
+																											                   [<item:alloyed:steel_ingot>, <item:immersiveengineering:coil_mv>, <item:alloyed:steel_ingot>],
+																				                                               [<item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>]]);
+//HV Transformer
+<recipetype:create:mechanical_crafting>.addRecipe("the_shocking_converter_box", <item:immersiveengineering:transformer_hv>, [[<item:immersiveengineering:connector_hv>, <item:createdeco:cast_iron_sheet>, <item:immersiveengineering:connector_mv>], 
+                                                                                                                             [<item:alloyed:steel_ingot>, <item:immersiveengineering:coil_hv>, <item:alloyed:steel_ingot>],
+																											                 [<item:createdeco:cast_iron_ingot>, <item:minecraft:iron_block>, <item:createdeco:cast_iron_ingot>],
+																											                 [<item:alloyed:steel_ingot>, <item:immersiveengineering:coil_hv>, <item:alloyed:steel_ingot>],
+																				                                             [<item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>]]);
 
 	
 

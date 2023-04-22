@@ -33,7 +33,10 @@ craftingTable.remove(<item:immersiveengineering:plate_electrum>);
 craftingTable.remove(<item:immersiveengineering:plate_steel>);
 
 
- 
+//Vacuum Tubes
+ craftingTable.addShaped("e_to_v", <item:immersiveengineering:electron_tube>, [
+    [<item:create:electron_tube>]]);
+
 
  //Cast Iron
 <recipetype:create:compacting>.remove(<item:createbigcannons:cast_iron_ingot>);
