@@ -211,7 +211,7 @@ craftingTable.remove(<item:computercraft:computer_advanced>);
  //LV Wire Coil
 craftingTable.addShaped("low_zappy_wires", <item:immersiveengineering:wirecoil_copper>, [
     [<item:minecraft:air>, <item:createaddition:copper_wire>, <item:minecraft:air>],
-    [<item:createaddition:copper_wire>, <item:minecraft:stick>, <item:createaddition:copper_wire>],
+    [<item:createaddition:copper_wire>, <tag:items:forge:rods/wooden>, <item:createaddition:copper_wire>],
     [<item:minecraft:air>, <item:createaddition:copper_wire>, <item:minecraft:air>]]);
  //Insulated LV Wire Coil
 craftingTable.addShaped("mehdi_safe_low_zappy_wires", <item:immersiveengineering:wirecoil_copper_ins> * 4, [
@@ -221,7 +221,7 @@ craftingTable.addShaped("mehdi_safe_low_zappy_wires", <item:immersiveengineering
  //MV Wire Coil
 craftingTable.addShaped("slightly_more_zappy_wires", <item:immersiveengineering:wirecoil_electrum>, [
     [<item:minecraft:air>, <item:immersiveengineering:wire_electrum>, <item:minecraft:air>],
-    [<item:immersiveengineering:wire_electrum>, <item:minecraft:stick>, <item:immersiveengineering:wire_electrum>],
+    [<item:immersiveengineering:wire_electrum>, <tag:items:forge:rods/wooden>, <item:immersiveengineering:wire_electrum>],
     [<item:minecraft:air>, <item:immersiveengineering:wire_electrum>, <item:minecraft:air>]]);
  //Insulated MV Wire Coil
 craftingTable.addShaped("mehdi_safe_slightly_more_zappy_wires", <item:immersiveengineering:wirecoil_electrum_ins> * 4, [
@@ -231,22 +231,22 @@ craftingTable.addShaped("mehdi_safe_slightly_more_zappy_wires", <item:immersivee
  //HV Wire Coil
 craftingTable.addShaped("very_zappy_wires", <item:immersiveengineering:wirecoil_steel>, [
     [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>],
-    [<item:immersiveengineering:wire_aluminum>, <item:minecraft:stick>, <item:immersiveengineering:wire_aluminum>],
+    [<item:immersiveengineering:wire_aluminum>, <tag:items:forge:rods/wooden>, <item:immersiveengineering:wire_aluminum>],
     [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>]]);
  //hEMP Rope Coil
 craftingTable.addShaped("long_swingy_thing", <item:immersiveengineering:wirecoil_structure_rope>, [
     [<item:minecraft:air>, <item:supplementaries:rope>, <item:minecraft:air>],
-    [<item:supplementaries:rope>, <item:minecraft:stick>, <item:supplementaries:rope>],
+    [<item:supplementaries:rope>, <tag:items:forge:rods/wooden>, <item:supplementaries:rope>],
     [<item:minecraft:air>, <item:supplementaries:rope>, <item:minecraft:air>]]);
 //Steel Cable Coil
 craftingTable.addShaped("very_non_felxible_swingy_thing", <item:immersiveengineering:wirecoil_structure_steel>, [
     [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>],
-    [<item:immersiveengineering:wire_steel>, <item:minecraft:stick>, <item:immersiveengineering:wire_steel>],
+    [<item:immersiveengineering:wire_steel>, <tag:items:forge:rods/wooden>, <item:immersiveengineering:wire_steel>],
     [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>]]);
 //Redstone Wire Coil
 craftingTable.addShaped("red_swingy_thing", <item:immersiveengineering:wirecoil_redstone>, [
     [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
-    [<item:minecraft:redstone>, <item:minecraft:stick>, <item:minecraft:redstone>],
+    [<item:minecraft:redstone>, <tag:items:forge:rods/wooden>, <item:minecraft:redstone>],
     [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>]]);
 //Electronic Component
 craftingTable.addShaped("electronic_doodad", <item:immersiveengineering:component_electronic>, [
@@ -275,7 +275,7 @@ craftingTable.addShaped("this_is_not_jonathan", <item:immersiveengineering:hamme
     [<item:alloyed:steel_sheet>, <item:alloyed:steel_ingot>],
     [<item:minecraft:stick>, <item:minecraft:air>]]);
 //Incandescent Light Bulb
-craftingTable.addShaped("the_better_candles", <item:immersiveengineering:light_bulb>, [
+craftingTable.addShaped("the_better_candles", <item:immersiveengineering:light_bulb> * 2, [
     [<item:minecraft:air>, <item:minecraft:glass>, <item:minecraft:air>],
     [<item:minecraft:glass>, <item:immersiveengineering:plate_nickel>, <item:minecraft:glass>],
     [<item:minecraft:air>, <item:create:copper_sheet>, <item:minecraft:air>]]);
@@ -304,6 +304,18 @@ craftingTable.addShaped("thats_a_lotta_zappy_generating_stuff", <item:immersivee
     [<item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>],
     [<item:immersiveengineering:wirecoil_steel>, <item:alloyed:steel_ingot>, <item:immersiveengineering:wirecoil_steel>],
     [<item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>]]);
+//Wooden Wallmount
+craftingTable.addShaped("wooden_rubberducky_holder", <item:immersiveengineering:treated_wallmount> * 2, [
+    [<tag:items:handcrafted:boards>, <tag:items:forge:rods/wooden>],
+    [<item:minecraft:air>, <tag:items:handcrafted:boards>]]);
+//Aluminium Wallmount
+craftingTable.addShaped("aluminum_rubberducky_holder", <item:immersiveengineering:alu_wallmount> * 2, [
+    [<item:immersiveengineering:plate_aluminum>, <item:immersiveengineering:stick_aluminum>],
+    [<item:minecraft:air>, <item:immersiveengineering:plate_aluminum>]]);
+//Steel Wallmount
+craftingTable.addShaped("steel_rubberducky_holder", <item:immersiveengineering:steel_wallmount> * 2, [
+    [<item:alloyed:steel_sheet>, <item:immersiveengineering:stick_steel>],
+    [<item:minecraft:air>, <item:alloyed:steel_sheet>]]);
 //Logic Unit
 <recipetype:create:mechanical_crafting>.addRecipe("1plus1equals3", <item:immersiveengineering:logic_unit>, [[<item:minecraft:air>, <item:alloyed:steel_sheet>, <item:immersiveengineering:component_electronic>, <item:alloyed:steel_sheet>, <item:minecraft:air>], 
                                                                                                             [<item:create:golden_sheet>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:golden_sheet>],
@@ -327,6 +339,12 @@ craftingTable.addShaped("thats_a_lotta_zappy_generating_stuff", <item:immersivee
 																											                 [<item:createdeco:cast_iron_ingot>, <item:minecraft:iron_block>, <item:createdeco:cast_iron_ingot>],
 																											                 [<item:alloyed:steel_ingot>, <item:immersiveengineering:coil_hv>, <item:alloyed:steel_ingot>],
 																				                                             [<item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>]]);
+//Railgun
+<recipetype:create:mechanical_crafting>.addRecipe("haha_rod_go_le_zoom", <item:immersiveengineering:railgun>, [[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:create:nixie_tube>, <item:minecraft:air>], 
+                                                                                                               [<item:createbigcannons:nethersteel_ingot>, <item:createbigcannons:nethersteel_ingot>, <item:createbigcannons:nethersteel_ingot>, <item:ae2:certus_quartz_crystal>, <item:immersiveengineering:component_electronic_adv>],
+																											   [<item:immersiveengineering:coil_mv>, <item:immersiveengineering:coil_mv>, <item:immersiveengineering:coil_mv>, <item:immersiveengineering:capacitor_mv>, <item:immersiveengineering:wirecoil_copper>],
+																											   [<item:createbigcannons:nethersteel_ingot>, <item:createbigcannons:nethersteel_ingot>, <item:createbigcannons:nethersteel_ingot>, <item:minecraft:netherite_ingot>, <item:immersiveengineering:circuit_board>],
+																				                               [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:immersiveengineering:wooden_grip>, <item:minecraft:air>]]);
 
 	
 
