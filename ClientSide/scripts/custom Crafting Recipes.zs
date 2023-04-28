@@ -1,7 +1,12 @@
 import mods.create.MechanicalCrafterManager;
+import mods.create.CompactingManager;
+import mods.create.MixingManager;
+import mods.create.CrushingManager;
+import crafttweaker.api.fluid.FluidIngredient;
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.tag.MCTag;
+import crafttweaker.api.recipe.FurnaceRecipeManager;
 
 //[]Vanilla
  //Tuff
@@ -205,9 +210,25 @@ craftingTable.remove(<item:computercraft:computer_advanced>);
 
 
 //Immersive Engineering
- //Phenolic Resin
+ //Duroplast
 <recipetype:create:filling>.addRecipe("duroplast_create", <item:immersiveengineering:plate_duroplast>, <item:minecraft:paper>, <fluid:immersiveengineering:phenolic_resin> * 300, 200);
- //Wires & Stuff
+ //Acetaldehyde
+<recipetype:create:mixing>.addRecipe("acetaldesomething", <constant:create:heat_condition:heated>, [<fluid:immersiveengineering:acetaldehyde> * 500], [<tag:items:forge:dusts/silver>], [<fluid:createaddition:bioethanol> * 500], 300);
+ //Creosote Oil
+<recipetype:create:mixing>.addRecipe("creosote_oil_thing", <constant:create:heat_condition:heated>, [<fluid:immersiveengineering:creosote> * 125], [<item:minecraft:charcoal> * 2], [<fluid:immersiveengineering:potion>.withTag({Potion: "minecraft:thick"}) * 200], 300);
+ //Phenolic Resin
+<recipetype:create:mixing>.addRecipe("pehnolic_resin", <constant:create:heat_condition:superheated>, [<fluid:immersiveengineering:phenolic_resin> * 1000], [<item:minecraft:air>], [<fluid:immersiveengineering:creosote> * 1000, <fluid:immersiveengineering:acetaldehyde> * 1000], 200);
+ //Redstone Acid
+<recipetype:create:mixing>.addRecipe("is_this_blood", <constant:create:heat_condition:heated>, [<fluid:immersiveengineering:redstone_acid> * 250], [<item:minecraft:redstone>], [<fluid:immersiveengineering:potion>.withTag({Potion: "minecraft:awkward"}) * 250], 200);
+ //Circuit Backplane
+<recipetype:create:compacting>.addRecipe("weird_green_plate_with_holes", <constant:create:heat_condition:heated>, [<item:immersiveengineering:circuit_board>], [<item:immersiveengineering:plate_duroplast>, <item:create:copper_sheet>, <item:minecraft:green_dye>], [], 200);
+ //Coal Coke
+<recipetype:create:compacting>.addRecipe("coke", <constant:create:heat_condition:superheated>, [<item:immersiveengineering:coal_coke>], [<item:minecraft:coal>], [], 600);
+ //HOP Graphite Dust
+<recipetype:create:compacting>.addRecipe("this_is_not_lead_powder", <constant:create:heat_condition:none>, [<item:immersiveengineering:dust_hop_graphite>], [<item:immersiveengineering:coal_coke>], [], 600);
+<recipetype:create:crushing>.addRecipe("graphite_i2d", [<item:immersiveengineering:dust_hop_graphite>], <item:immersiveengineering:ingot_hop_graphite>, 100);
+ //HOP Graphite Ingot
+furnace.addRecipe("graphite_d2i", <item:immersiveengineering:ingot_hop_graphite>, <item:immersiveengineering:dust_hop_graphite>, 1.0, 300);
  //LV Wire Coil
 craftingTable.addShaped("low_zappy_wires", <item:immersiveengineering:wirecoil_copper>, [
     [<item:minecraft:air>, <item:createaddition:copper_wire>, <item:minecraft:air>],
@@ -246,7 +267,7 @@ craftingTable.addShaped("very_non_felxible_swingy_thing", <item:immersiveenginee
 //Redstone Wire Coil
 craftingTable.addShaped("red_swingy_thing", <item:immersiveengineering:wirecoil_redstone>, [
     [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
-    [<item:minecraft:redstone>, <tag:items:forge:rods/wooden>, <item:minecraft:redstone>],
+    [<item:createaddition:copper_wire>, <tag:items:forge:rods/wooden>, <item:createaddition:copper_wire>],
     [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>]]);
 //Electronic Component
 craftingTable.addShaped("electronic_doodad", <item:immersiveengineering:component_electronic>, [
@@ -316,6 +337,80 @@ craftingTable.addShaped("aluminum_rubberducky_holder", <item:immersiveengineerin
 craftingTable.addShaped("steel_rubberducky_holder", <item:immersiveengineering:steel_wallmount> * 2, [
     [<item:alloyed:steel_sheet>, <item:immersiveengineering:stick_steel>],
     [<item:minecraft:air>, <item:alloyed:steel_sheet>]]);
+//Precision Scope
+craftingTable.addShaped("360_no_sco-ohh..", <item:immersiveengineering:toolupgrade_railgun_scope>, [
+    [<item:create:brass_sheet>, <item:extendedgears:iron_cogwheel>, <item:alloyed:steel_sheet>],
+    [<item:minecraft:amethyst_shard>, <item:create:brass_nugget>, <item:alloyed:steel_sheet>]]);
+//Advanced Heatsinks
+craftingTable.addShaped("this_is_kinda_op", <item:immersiveengineering:toolupgrade_railgun_capacitors>, [
+    [<item:minecraft:air>, <item:minecraft:air>, <item:immersiveengineering:plate_constantan>],
+    [<item:minecraft:air>, <item:immersiveengineering:plate_constantan>, <item:minecraft:netherite_ingot>],
+    [<item:immersiveengineering:plate_constantan>, <item:minecraft:netherite_ingot>, <item:create:copper_sheet>]]);
+//Breaker Switch
+craftingTable.addShaped("insert_fnaf_powerdown_sound_here", <item:immersiveengineering:breaker_switch>, [
+    [<item:create:copper_sheet>, <tag:items:forge:rods/wooden>, <item:create:copper_sheet>],
+    [<item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>]]);
+//LV Accumulator
+craftingTable.addShaped("lv_zappy_storage", <item:immersiveengineering:capacitor_lv>, [
+    [<item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>],
+    [<item:create:copper_sheet>, <item:immersiveengineering:plate_lead>, <item:create:copper_sheet>],
+    [<tag:items:minecraft:planks>, <item:immersiveengineering:redstone_acid_bucket>, <tag:items:minecraft:planks>]]);
+//MV Accumulator
+craftingTable.addShaped("mv_zappy_storage", <item:immersiveengineering:capacitor_mv>, [
+    [<item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>],
+    [<item:immersiveengineering:plate_nickel>, <item:immersiveengineering:plate_lead>, <item:create:iron_sheet>],
+    [<tag:items:minecraft:planks>, <item:immersiveengineering:redstone_acid_bucket>, <tag:items:minecraft:planks>]]);
+//HV Accumulator
+craftingTable.addShaped("dangerous_hv_zappy_storage", <item:immersiveengineering:capacitor_hv>, [
+    [<item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>],
+    [<item:immersiveengineering:plate_aluminum>, <item:immersiveengineering:plate_lead>, <item:immersiveengineering:ingot_hop_graphite>],
+    [<tag:items:minecraft:planks>, <item:immersiveengineering:redstone_acid_bucket>, <tag:items:minecraft:planks>]]);
+//LV Connector
+craftingTable.addShaped("lv_connectorio", <item:immersiveengineering:connector_lv> * 4, [
+    [<item:minecraft:air>, <item:minecraft:copper_ingot>, <item:minecraft:air>],
+    [<item:minecraft:terracotta>, <item:minecraft:copper_ingot>, <item:minecraft:terracotta>],
+    [<item:minecraft:terracotta>, <item:minecraft:copper_ingot>, <item:minecraft:terracotta>]]);
+//LV Relay
+craftingTable.addShaped("lv_relaio", <item:immersiveengineering:connector_lv_relay> * 4, [
+    [<item:minecraft:air>, <item:minecraft:copper_ingot>, <item:minecraft:air>],
+    [<item:minecraft:terracotta>, <item:minecraft:copper_ingot>, <item:minecraft:terracotta>]]);
+//MV Connector
+craftingTable.addShaped("mv_connectorio", <item:immersiveengineering:connector_mv> * 4, [
+    [<item:minecraft:air>, <item:immersiveengineering:ingot_electrum>, <item:minecraft:air>],
+    [<item:minecraft:terracotta>, <item:immersiveengineering:ingot_electrum>, <item:minecraft:terracotta>],
+    [<item:minecraft:terracotta>, <item:immersiveengineering:ingot_electrum>, <item:minecraft:terracotta>]]);
+//MV Relay
+craftingTable.addShaped("mv_relaio", <item:immersiveengineering:connector_mv_relay> * 4, [
+    [<item:minecraft:air>, <item:immersiveengineering:ingot_electrum>, <item:minecraft:air>],
+    [<item:minecraft:terracotta>, <item:immersiveengineering:ingot_electrum>, <item:minecraft:terracotta>]]);
+//HV Connector
+craftingTable.addShaped("hv_connectorio", <item:immersiveengineering:connector_hv> * 4, [
+    [<item:minecraft:air>, <item:immersiveengineering:ingot_aluminum>, <item:minecraft:air>],
+    [<item:minecraft:terracotta>, <item:immersiveengineering:ingot_aluminum>, <item:minecraft:terracotta>],
+    [<item:minecraft:terracotta>, <item:immersiveengineering:ingot_aluminum>, <item:minecraft:terracotta>]]);
+//HV Relay
+craftingTable.addShaped("hv_relaio", <item:immersiveengineering:connector_hv_relay> * 4, [
+    [<item:minecraft:air>, <item:immersiveengineering:ingot_aluminum>, <item:minecraft:air>],
+    [<item:immersiveengineering:insulating_glass>, <item:immersiveengineering:ingot_aluminum>, <item:immersiveengineering:insulating_glass>]]);
+//Insulating Glass
+craftingTable.addShaped("you_shall_not_pass", <item:immersiveengineering:insulating_glass> * 2, [
+    [<item:minecraft:air>, <item:minecraft:glass>, <item:minecraft:air>],
+    [<item:create:crushed_iron_ore>, <item:minecraft:green_dye>, <item:create:crushed_iron_ore>],
+    [<item:minecraft:air>, <item:minecraft:glass>, <item:minecraft:air>]]);
+//Redstone Wire Connector
+craftingTable.addShaped("redstone_connectorio", <item:immersiveengineering:connector_redstone>, [
+    [<item:create:brass_nugget>, <item:create:brass_nugget>, <item:create:brass_nugget>],
+    [<item:minecraft:terracotta>, <item:minecraft:redstone>, <item:minecraft:terracotta>]]);
+//Redstone Interface Connector
+craftingTable.addShaped("interfacing_thingy", <item:immersiveengineering:connector_bundled>, [
+    [<item:minecraft:air>, <item:immersiveengineering:wire_aluminum>, <item:minecraft:air>],
+    [<item:immersiveengineering:wire_aluminum>, <item:immersiveengineering:connector_redstone>, <item:immersiveengineering:wire_aluminum>],
+    [<item:minecraft:air>, <item:immersiveengineering:component_electronic>, <item:minecraft:air>]]);
+//Redstone Probe Connector
+craftingTable.addShaped("pokes_at_the_thing_it_probes", <item:immersiveengineering:connector_probe>, [
+    [<item:minecraft:air>, <item:immersiveengineering:connector_redstone>, <item:minecraft:air>],
+    [<item:minecraft:glass_pane>, <item:immersiveengineering:circuit_board>, <item:minecraft:glass_pane>],
+    [<item:createaddition:copper_wire>, <item:immersiveengineering:component_electronic_adv>, <item:minecraft:quartz>]]);
 //Logic Unit
 <recipetype:create:mechanical_crafting>.addRecipe("1plus1equals3", <item:immersiveengineering:logic_unit>, [[<item:minecraft:air>, <item:alloyed:steel_sheet>, <item:immersiveengineering:component_electronic>, <item:alloyed:steel_sheet>, <item:minecraft:air>], 
                                                                                                             [<item:create:golden_sheet>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:golden_sheet>],
@@ -345,6 +440,10 @@ craftingTable.addShaped("steel_rubberducky_holder", <item:immersiveengineering:s
 																											   [<item:immersiveengineering:coil_mv>, <item:immersiveengineering:coil_mv>, <item:immersiveengineering:coil_mv>, <item:immersiveengineering:capacitor_mv>, <item:immersiveengineering:wirecoil_copper>],
 																											   [<item:createbigcannons:nethersteel_ingot>, <item:createbigcannons:nethersteel_ingot>, <item:createbigcannons:nethersteel_ingot>, <item:minecraft:netherite_ingot>, <item:immersiveengineering:circuit_board>],
 																				                               [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:immersiveengineering:wooden_grip>, <item:minecraft:air>]]);
+//Redstone Breaker
+<recipetype:create:mechanical_crafting>.addRecipe("relay_go_clicky_click", <item:immersiveengineering:redstone_breaker>, [[<item:immersiveengineering:connector_mv>, <item:create:copper_sheet>, <item:create:copper_sheet>, <item:immersiveengineering:connector_mv>], 
+                                                                                                                          [<item:minecraft:redstone>, <item:immersiveengineering:wirecoil_copper>, <item:create:electron_tube>, <item:minecraft:redstone>],
+																				                                          [<item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>]]);
 
 	
 
@@ -353,7 +452,7 @@ craftingTable.addShaped("steel_rubberducky_holder", <item:immersiveengineering:s
  //Battery Upgrade
 craftingTable.remove(<item:sophisticatedbackpacks:battery_upgrade>);
 craftingTable.addShaped("hey_do_you_have_a_phone_charger", <item:sophisticatedbackpacks:battery_upgrade>, [
-    [<item:minecraft:air>, <item:createaddition:capacitor>, <item:minecraft:air>],
+    [<item:minecraft:air>, <item:createaddition:capacitor>, <item:immersiveengineering:component_electronic>],
     [<item:create:brass_sheet>, <item:sophisticatedbackpacks:upgrade_base>, <item:create:brass_sheet>],
     [<item:minecraft:air>, <item:createaddition:copper_wire>, <item:minecraft:air>]]);
  //Smoking Upgrade
@@ -370,7 +469,7 @@ craftingTable.addShaped("no_not_that_kind_of_tank", <item:sophisticatedbackpacks
     [<item:minecraft:air>, <item:create:iron_sheet>, <item:minecraft:air>]]);
  //Pump Upgrade
 craftingTable.remove(<item:sophisticatedbackpacks:pump_upgrade>);
-craftingTable.addShaped("to_fill_all_your_fluid_transportation_ideas", <item:sophisticatedbackpacks:pump_upgrade>, [
+craftingTable.addShaped("to_fill_all_your_fluid_transportation_needs", <item:sophisticatedbackpacks:pump_upgrade>, [
     [<item:minecraft:air>, <item:create:iron_sheet>, <item:minecraft:air>],
     [<item:create:mechanical_pump>, <item:sophisticatedbackpacks:upgrade_base>, <item:create:fluid_valve>],
     [<item:minecraft:air>, <item:create:iron_sheet>, <item:minecraft:air>]]);

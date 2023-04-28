@@ -15,6 +15,66 @@ import mods.jeitweaker.Jei;
 //Immersive Engineering
  //EVERYTHING
  recipes.removeByModid("immersiveengineering");
+ Jei.hideIngredient(<item:immersiveengineering:mold_plate>);
+ Jei.hideIngredient(<item:immersiveengineering:mold_gear>);
+ Jei.hideIngredient(<item:immersiveengineering:mold_rod>);
+ Jei.hideIngredient(<item:immersiveengineering:mold_bullet_casing>);
+ Jei.hideIngredient(<item:immersiveengineering:mold_wire>);
+ Jei.hideIngredient(<item:immersiveengineering:mold_packing_4>);
+ Jei.hideIngredient(<item:immersiveengineering:mold_packing_9>);
+ Jei.hideIngredient(<item:immersiveengineering:mold_unpacking>);
+ Jei.hideIngredient(<item:immersiveengineering:ersatz_leather>);
+ Jei.hideIngredient(<item:immersiveengineering:coal_coke>);
+ Jei.hideIngredient(<item:immersiveengineering:slag>);
+ Jei.hideIngredient(<item:immersiveengineering:waterwheel_segment>);
+ Jei.hideIngredient(<item:immersiveengineering:windmill_blade>);
+ Jei.hideIngredient(<item:immersiveengineering:windmill_sail>);
+ Jei.hideIngredient(<item:immersiveengineering:dust_coke>);
+ Jei.hideIngredient(<item:immersiveengineering:dust_hop_graphite>);
+ Jei.hideIngredient(<item:immersiveengineering:ingot_hop_graphite>);
+ Jei.hideIngredient(<item:immersiveengineering:dust_saltpeter>);
+ Jei.hideIngredient(<item:immersiveengineering:dust_sulfur>);
+ Jei.hideIngredient(<item:immersiveengineering:dust_wood>);
+ Jei.hideIngredient(<item:immersiveengineering:nugget_copper>);
+ Jei.hideIngredient(<item:immersiveengineering:plate_copper>);
+ Jei.hideIngredient(<item:immersiveengineering:ingot_steel>);
+ Jei.hideIngredient(<item:immersiveengineering:nugget_steel>);
+ Jei.hideIngredient(<item:immersiveengineering:plate_steel>);
+ Jei.hideIngredient(<item:immersiveengineering:plate_iron>);
+ Jei.hideIngredient(<item:immersiveengineering:plate_gold>);
+ Jei.hideIngredient(<item:immersiveengineering:drill>);
+ Jei.hideIngredient(<item:immersiveengineering:drillhead_steel>);
+ Jei.hideIngredient(<item:immersiveengineering:drillhead_iron>);
+ Jei.hideIngredient(<item:immersiveengineering:buzzsaw>);
+ Jei.hideIngredient(<item:immersiveengineering:sawblade>);
+ Jei.hideIngredient(<item:immersiveengineering:rockcutter>);
+ Jei.hideIngredient(<item:immersiveengineering:grindingdisk>);
+ Jei.hideIngredient(<item:immersiveengineering:survey_tools>);
+ Jei.hideIngredient(<item:immersiveengineering:glider>);
+ Jei.hideIngredient(<item:immersiveengineering:chemthrower>);
+ Jei.hideIngredient(<item:immersiveengineering:jerrycan>);
+ Jei.hideIngredient(<item:immersiveengineering:toolupgrade_drill_waterproof>);
+ Jei.hideIngredient(<item:immersiveengineering:toolupgrade_drill_lube>);
+ Jei.hideIngredient(<item:immersiveengineering:toolupgrade_drill_damage>);
+ Jei.hideIngredient(<item:immersiveengineering:toolupgrade_drill_fortune>);
+ Jei.hideIngredient(<item:immersiveengineering:toolupgrade_drill_capacity>);
+ Jei.hideIngredient(<item:immersiveengineering:toolupgrade_revolver_electro>);
+ Jei.hideIngredient(<item:immersiveengineering:toolupgrade_chemthrower_focus>);
+ Jei.hideIngredient(<item:immersiveengineering:toolupgrade_chemthrower_multitank>);
+ Jei.hideIngredient(<item:immersiveengineering:toolupgrade_buzzsaw_spareblades>);
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_basic>);
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_basic>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_redstone>);
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_dropper>);
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_dropper>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_vertical>);
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_vertical>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_splitter>);
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_splitter>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_extract>);
+ Jei.hideIngredient(<item:immersiveengineering:conveyor_extract>.withTag({defaultCover: "immersiveengineering:steel_scaffolding_standard"}));
+ 
+ 
 
 
 //ComputerCraft: Tweaked

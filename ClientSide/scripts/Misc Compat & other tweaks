@@ -34,14 +34,6 @@ PressingManager.remove(<item:immersiveengineering:plate_steel>);
 craftingTable.remove(<item:immersiveengineering:plate_steel>);
 
 
-//Vacuum Tubes
- craftingTable.addShaped("e_to_v", <item:immersiveengineering:electron_tube>, [
-    [<item:create:electron_tube>]]);
-
-//Liquids
- //Acetaldehyde
- <recipetype:create:mixing>.addRecipe("acetaldehyde", <constant:create:heat_condition:heated>, [<fluid:immersiveengineering:acetaldehyde> * 500], [<tag:items:forge:dusts/silver>], [<fluid:createaddition:bioethanol> * 500], 300);
-
  //Cast Iron
 <recipetype:create:compacting>.remove(<item:createbigcannons:cast_iron_ingot>);
 
