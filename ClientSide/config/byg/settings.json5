@@ -37,5 +37,5 @@ to make editing this file much easier.
 	*/
 	"add_loot_tables": true,
 	// Use BYG world generation?
-	"world_generation": false
+	"world_generation": true
 }

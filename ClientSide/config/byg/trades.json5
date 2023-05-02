@@ -10,13 +10,6 @@ to make editing this file much easier.
 {
 	// Trades for a given villager profession. Trade levels are in the range of 1-5
 	"trades_by_profession": {
-		"ae2:fluix_researcher": {
-			"1": [],
-			"2": [],
-			"3": [],
-			"4": [],
-			"5": []
-		},
 		"byg:forager": {
 			"1": [
 				{
@@ -74,7 +67,7 @@ to make editing this file much easier.
 						"item": "byg:white_puffball_spores",
 						"max_uses": 4,
 						"number_of_items": 5,
-						"villager_xp": 2
+						"villager_xp": 3
 					},
 					"type": "byg:items_for_emeralds"
 				},
@@ -83,7 +76,7 @@ to make editing this file much easier.
 						"cost": 10,
 						"item": "minecraft:crimson_fungus",
 						"max_uses": 12,
-						"villager_xp": 2
+						"villager_xp": 3
 					},
 					"type": "byg:emerald_for_items"
 				},
@@ -92,7 +85,7 @@ to make editing this file much easier.
 						"cost": 10,
 						"item": "minecraft:warped_fungus",
 						"max_uses": 12,
-						"villager_xp": 2
+						"villager_xp": 3
 					},
 					"type": "byg:emerald_for_items"
 				},
@@ -101,7 +94,7 @@ to make editing this file much easier.
 						"cost": 10,
 						"item": "byg:sythian_fungus",
 						"max_uses": 12,
-						"villager_xp": 2
+						"villager_xp": 3
 					},
 					"type": "byg:emerald_for_items"
 				}
@@ -134,7 +127,7 @@ to make editing this file much easier.
 						"cost": 10,
 						"item": "byg:imparius_mushroom",
 						"max_uses": 12,
-						"villager_xp": 2
+						"villager_xp": 4
 					},
 					"type": "byg:emerald_for_items"
 				},
@@ -143,7 +136,7 @@ to make editing this file much easier.
 						"cost": 10,
 						"item": "byg:shulkren_fungus",
 						"max_uses": 12,
-						"villager_xp": 2
+						"villager_xp": 4
 					},
 					"type": "byg:emerald_for_items"
 				},
@@ -152,13 +145,55 @@ to make editing this file much easier.
 						"cost": 10,
 						"item": "byg:fungal_imparius",
 						"max_uses": 12,
-						"villager_xp": 2
+						"villager_xp": 4
 					},
 					"type": "byg:emerald_for_items"
 				}
 			]
 		},
 		"friendsandfoes:beekeeper": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"iammusicplayer:dj": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"immersiveengineering:electrician": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"immersiveengineering:engineer": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"immersiveengineering:gunsmith": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"immersiveengineering:machinist": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": []
+		},
+		"immersiveengineering:outfitter": {
 			"1": [],
 			"2": [],
 			"3": [],
@@ -565,7 +600,7 @@ to make editing this file much easier.
 			{
 				"config": {
 					"emerald_cost": 5,
-					"item": "byg:lament_sapling",
+					"item": "byg:jacaranda_sapling",
 					"max_uses": 12,
 					"number_of_items": 1,
 					"villager_xp": 2
@@ -585,7 +620,7 @@ to make editing this file much easier.
 			{
 				"config": {
 					"emerald_cost": 5,
-					"item": "byg:jacaranda_sapling",
+					"item": "byg:lament_sapling",
 					"max_uses": 12,
 					"number_of_items": 1,
 					"villager_xp": 2
@@ -605,7 +640,17 @@ to make editing this file much easier.
 			{
 				"config": {
 					"emerald_cost": 5,
-					"item": "byg:white_mangrove_sapling",
+					"item": "byg:mangrove_sapling",
+					"max_uses": 12,
+					"number_of_items": 1,
+					"villager_xp": 2
+				},
+				"type": "byg:items_for_emeralds"
+			},
+			{
+				"config": {
+					"emerald_cost": 5,
+					"item": "byg:maple_sapling",
 					"max_uses": 12,
 					"number_of_items": 1,
 					"villager_xp": 2
@@ -626,16 +671,6 @@ to make editing this file much easier.
 				"config": {
 					"emerald_cost": 5,
 					"item": "byg:silver_maple_sapling",
-					"max_uses": 12,
-					"number_of_items": 1,
-					"villager_xp": 2
-				},
-				"type": "byg:items_for_emeralds"
-			},
-			{
-				"config": {
-					"emerald_cost": 5,
-					"item": "byg:maple_sapling",
 					"max_uses": 12,
 					"number_of_items": 1,
 					"villager_xp": 2

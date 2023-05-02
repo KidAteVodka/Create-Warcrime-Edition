@@ -3,16 +3,16 @@
 	wind_vane = true
 	clock_block = true
 	redstone_illuminator = true
-	crank = false
+	crank = true
 	faucet = true
-	cog_block = false
+	cog_block = true
 	gold_door = true
 	gold_trapdoor = true
 	lock_block = true
 	dispenser_minecart = true
-	crystal_display = false
-	relayer = false
-	pulley_block = false
+	crystal_display = true
+	relayer = true
+	pulley_block = true
 
 	[redstone.speaker_block]
 		enabled = true
@@ -23,7 +23,7 @@
 		range = 64
 
 	[redstone.bellows]
-		enabled = false
+		enabled = true
 		#bellows pushes air following this equation: 
 		#air=(sin(2PI*ticks/period)<0), with period = base_period-(redstone_power-1)*power_scaling 
 		#represents base period at 1 power
@@ -46,7 +46,7 @@
 		range = 5
 
 	[redstone.spring_launcher]
-		enabled = false
+		enabled = true
 		#spring launcher launch speed
 		#Range: 0.0 ~ 16.0
 		velocity = 1.5
@@ -63,13 +63,13 @@
 		work_from_any_side = false
 
 	[redstone.turn_table]
-		enabled = false
+		enabled = true
 		#can rotate entities standing on it?
 		rotate_entities = true
 
 [functional]
 	fodder = true
-	present = false
+	present = true
 
 	[functional.rope]
 		enabled = true
@@ -100,7 +100,7 @@
 		jar_liquids = true
 
 	[functional.cage]
-		enabled = false
+		enabled = true
 		#Allows all entities to be captured by cages and jars. Not meant for survival
 		allow_all_mobs = false
 		#Allows all baby mobs to be captured by cages
@@ -114,7 +114,7 @@
 		health_threshold = 100
 
 	[functional.safe]
-		enabled = false
+		enabled = true
 		#Makes safes only breakable by their owner or by a player in creative
 		prevent_breaking = false
 		#Make safes simpler so they do not require keys:
@@ -133,7 +133,7 @@
 		slots = 9
 
 	[functional.bamboo_spikes]
-		enabled = false
+		enabled = true
 		tipped_spikes = true
 		#Allows entities killed by spikes to drop loot as if they were killed by a player
 		player_loot = false
@@ -213,7 +213,7 @@
 		interaction_mode = "BOTH"
 
 	[building.timber_frame]
-		enabled = false
+		enabled = true
 		#Allow placing a timber frame directly on a block by holding shift
 		swap_on_shift = false
 		#Allows axes to remove a framed block leaving the contained block intact
@@ -240,7 +240,7 @@
 		horse_speed_duration = 10
 
 	[building.planter]
-		enabled = false
+		enabled = true
 		#Makes so saplings that grow in a planter will break it turning into rooted dirt
 		broken_by_sapling = true
 
@@ -263,7 +263,7 @@
 		rain_wash_ash = true
 
 		[building.ash.basalt_ash]
-			enabled = false
+			enabled = true
 			#Attempts at every patch to spawn 1 block. Increases average patch size
 			#Range: 1 ~ 1000
 			attempts_per_patch = 36
@@ -301,7 +301,7 @@
 			show_distance_text = true
 
 [tools]
-	antique_ink = false
+	antique_ink = true
 	candy = true
 	stasis = true
 
@@ -336,7 +336,7 @@
 			feather_falling_prevents_breaking = true
 
 	[tools.wrench]
-		enabled = false
+		enabled = true
 		#Allows wrenches to bypass a block interaction action prioritizing their own when on said hand
 		#Allowed Values: MAIN_HAND, OFF_HAND, BOTH, NONE
 		bypass_when_on = "MAIN_HAND"
@@ -359,7 +359,7 @@
 		bound_distance = 64
 
 	[tools.bomb]
-		enabled = false
+		enabled = true
 		#Bomb explosion radius (damage depends on this)
 		#Range: 0.1 ~ 10.0
 		explosion_radius = 2.0
@@ -421,7 +421,7 @@
 
 	[tweaks.dispenser_tweaks]
 		#Allows dispensers to use axes on blocks to strip logs and scrape off copper oxidation and wax
-		axe_strip = false
+		axe_strip = true
 		#Enables shooting ender pearls with dispensers
 		shoot_ender_pearls = true
 
@@ -483,7 +483,7 @@
 
 	[tweaks.raked_gravel]
 		#allow gravel to be raked with a hoe
-		enabled = false
+		enabled = true
 
 	[tweaks.bottle_xp]
 		#Allow bottling up xp by using a bottle on an enchanting table

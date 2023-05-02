@@ -2,7 +2,6 @@
   "checkForNewUpdates": true,
   "enableCopperGolem": true,
   "generateCopperGolemAreaStructure": true,
-  "generateCopperGolemInAncientCity": true,
   "enableGlare": true,
   "enableGlareSpawn": true,
   "enableGlareGriefing": true,
@@ -36,10 +35,6 @@
   "enableIllusionerSpawn": true,
   "enableIllusionerInRaids": true,
   "generateIllusionerShackStructure": true,
-  "generateIllusionerTrainingGroundsStructure": true,
-  "enableZombieHorseTrap": true,
-  "enableWildfire": true,
-  "generateCitadelStructure": true,
   "enableBeekeeperVillagerProfession": true,
   "generateBeekeeperAreaStructure": true
 }

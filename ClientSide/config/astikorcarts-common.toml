@@ -1,5 +1,16 @@
 
-#Configuration for all carts and cart-like vehicles, check log for automatic "pull_animals" list.
+#Configuration for all carts and cart-like vehicles
+#
+#Default pull_animals = [
+#    "minecraft:donkey",
+#    "minecraft:horse",
+#    "minecraft:mule",
+#    "minecraft:skeleton_horse",
+#    "minecraft:zombie_horse",
+#    "minecraft:player",
+#    "dragonmounts:dragon",
+#    "horse_colors:horse_felinoid"
+#  ]
 [carts]
 
 	#The Supply Cart, a type of cart that stores items

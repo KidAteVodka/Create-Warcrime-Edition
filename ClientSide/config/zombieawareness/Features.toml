@@ -22,9 +22,9 @@
 	#How loud sounds should be for a mob targetting you
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
 	soundVolumeAlertTarget = 0.5
-	#A developer of this mod has defined this config option with a blank comment, which causes obscure bugs in Forge's config system and will cause a crash in the future. Please report this to the mod author.
+	# 
 	soundAlerts = false
-	#A developer of this mod has defined this config option with a blank comment, which causes obscure bugs in Forge's config system and will cause a crash in the future. Please report this to the mod author.
+	# 
 	soundInvestigates = false
 	#Uses a different kind of mob alert noise, might break immersion a bit ;)
 	soundUseAlternateAlertNoise = false

@@ -3,7 +3,7 @@ food_bar = true
 #Render experience bar when not jumping with a mount.
 experience_bar = true
 
-[integration]
+[compat]
 	#Enable compat with AppleSkin mod when it is installed.
 	#Should only really be disabled when breaking changes have been made to Apple Skin.
 	apple_skin = true

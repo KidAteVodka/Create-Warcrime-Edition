@@ -46,6 +46,8 @@ craftingTable.addShaped("ebut-nortcele", <item:create:electron_tube>, [
     [<item:minecraft:air>, <item:create:polished_rose_quartz>],
     [<item:createaddition:copper_wire>, <item:immersiveengineering:plate_nickel>],
     [<item:minecraft:air>, <item:create:iron_sheet>]]);
+craftingTable.addShapeless("vt2et", <item:create:electron_tube>, [<item:immersiveengineering:electron_tube>]);
+craftingTable.addShapeless("et2vt", <item:immersiveengineering:electron_tube>, [<item:create:electron_tube>]);
 	
 
 
@@ -113,19 +115,19 @@ craftingTable.remove(<item:ae2:spatial_cell_component_2>);
 craftingTable.addShaped("there_is_nothing_here", <item:ae2:spatial_cell_component_2>, [
     [<item:immersiveengineering:component_electronic_adv>, <item:ae2:fluix_pearl>, <item:minecraft:popped_chorus_fruit>],
     [<item:ae2:fluix_pearl>, <item:ae2:engineering_processor>, <item:ae2:fluix_pearl>],
-    [<item:createbigcannons:nethersteel_ingot>, <item:minecraft:netherite_scrap>, <item:minecraft:echo_shard>]]);
+    [<item:createbigcannons:nethersteel_ingot>, <item:minecraft:netherite_scrap>, <item:minecraft:air>]]);
  //16^3 Spatial Storage Component
 craftingTable.remove(<item:ae2:spatial_cell_component_16>);
 craftingTable.addShaped("is_this_a_tardis", <item:ae2:spatial_cell_component_16>, [
-    [<item:minecraft:echo_shard>, <item:ae2:spatial_cell_component_2>, <item:minecraft:popped_chorus_fruit>],
+    [<item:minecraft:air>, <item:ae2:spatial_cell_component_2>, <item:minecraft:popped_chorus_fruit>],
     [<item:ae2:spatial_cell_component_2>, <item:ae2:engineering_processor>, <item:ae2:spatial_cell_component_2>],
-    [<item:minecraft:popped_chorus_fruit>, <item:ae2:spatial_cell_component_2>, <item:minecraft:echo_shard>]]);
+    [<item:minecraft:popped_chorus_fruit>, <item:ae2:spatial_cell_component_2>, <item:minecraft:air>]]);
  //128^3 Spatial Storage Component
 craftingTable.remove(<item:ae2:spatial_cell_component_128>);
 craftingTable.addShaped("is_this_a_hyperspace", <item:ae2:spatial_cell_component_128>, [
-    [<item:minecraft:echo_shard>, <item:ae2:spatial_cell_component_16>, <item:minecraft:popped_chorus_fruit>],
+    [<item:minecraft:air>, <item:ae2:spatial_cell_component_16>, <item:minecraft:popped_chorus_fruit>],
     [<item:ae2:spatial_cell_component_16>, <item:ae2:engineering_processor>, <item:ae2:spatial_cell_component_16>],
-    [<item:minecraft:popped_chorus_fruit>, <item:ae2:spatial_cell_component_16>, <item:minecraft:echo_shard>]]);
+    [<item:minecraft:popped_chorus_fruit>, <item:ae2:spatial_cell_component_16>, <item:minecraft:air>]]);
  //Illuminated Panel
 craftingTable.remove(<item:ae2:semi_dark_monitor>);
 craftingTable.addShaped("glowy_plate", <item:ae2:semi_dark_monitor> * 3, [
@@ -259,188 +261,291 @@ craftingTable.addShaped("long_swingy_thing", <item:immersiveengineering:wirecoil
     [<item:minecraft:air>, <item:supplementaries:rope>, <item:minecraft:air>],
     [<item:supplementaries:rope>, <tag:items:forge:rods/wooden>, <item:supplementaries:rope>],
     [<item:minecraft:air>, <item:supplementaries:rope>, <item:minecraft:air>]]);
-//Steel Cable Coil
+ //Steel Cable Coil
 craftingTable.addShaped("very_non_felxible_swingy_thing", <item:immersiveengineering:wirecoil_structure_steel>, [
     [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>],
     [<item:immersiveengineering:wire_steel>, <tag:items:forge:rods/wooden>, <item:immersiveengineering:wire_steel>],
     [<item:minecraft:air>, <item:immersiveengineering:wire_steel>, <item:minecraft:air>]]);
-//Redstone Wire Coil
+ //Redstone Wire Coil
 craftingTable.addShaped("red_swingy_thing", <item:immersiveengineering:wirecoil_redstone>, [
     [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>],
     [<item:createaddition:copper_wire>, <tag:items:forge:rods/wooden>, <item:createaddition:copper_wire>],
     [<item:minecraft:air>, <item:minecraft:redstone>, <item:minecraft:air>]]);
-//Electronic Component
+ //Electronic Component
 craftingTable.addShaped("electronic_doodad", <item:immersiveengineering:component_electronic>, [
     [<item:minecraft:quartz>, <item:minecraft:redstone>],
-    [<item:create:brass_sheet>, <tag:items:handcrafted:boards>]]);
-//Advanced Electronic Component
+    [<item:create:brass_sheet>, <tag:items:minecraft:wooden_pressure_plates>]]);
+ //Advanced Electronic Component
 craftingTable.addShaped("better_electronic_doodad", <item:immersiveengineering:component_electronic_adv>, [
     [<item:create:electron_tube>, <item:createaddition:gold_wire>, <item:create:electron_tube>],
     [<item:minecraft:air>, <item:immersiveengineering:plate_duroplast>, <item:minecraft:air>]]);
-//Tough Fabric
+ //Tough Fabric
 craftingTable.addShaped("fabric_thing", <item:immersiveengineering:hemp_fabric>, [
     [<item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>],
     [<item:immersiveengineering:hemp_fiber>, <item:minecraft:stick>, <item:immersiveengineering:hemp_fiber>],
     [<item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>, <item:immersiveengineering:hemp_fiber>]]);
-//Engineer´s Wire Cutters
+ //Engineer´s Wire Cutters
 craftingTable.addShaped("snippy_thing", <item:immersiveengineering:wirecutter>, [
     [<item:minecraft:air>, <item:alloyed:steel_sheet>, <item:minecraft:air>],
     [<item:alloyed:steel_sheet>, <item:alloyed:steel_nugget>, <item:minecraft:stick>],
     [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>]]);
-//Engineer´s Screwdriver
+ //Engineer´s Screwdriver
 craftingTable.addShaped("pokey_thing", <item:immersiveengineering:screwdriver>, [
     [<item:minecraft:air>, <item:immersiveengineering:stick_steel>],
     [<item:minecraft:stick>, <item:minecraft:air>]]);
-//Engineer´s Hammer
+ //Engineer´s Hammer
 craftingTable.addShaped("this_is_not_jonathan", <item:immersiveengineering:hammer>, [
     [<item:alloyed:steel_sheet>, <item:alloyed:steel_ingot>],
     [<item:minecraft:stick>, <item:minecraft:air>]]);
-//Incandescent Light Bulb
+ //Incandescent Light Bulb
 craftingTable.addShaped("the_better_candles", <item:immersiveengineering:light_bulb> * 2, [
     [<item:minecraft:air>, <item:minecraft:glass>, <item:minecraft:air>],
     [<item:minecraft:glass>, <item:immersiveengineering:plate_nickel>, <item:minecraft:glass>],
     [<item:minecraft:air>, <item:create:copper_sheet>, <item:minecraft:air>]]);
-//Powered Lantern
+ //Powered Lantern
 craftingTable.addShaped("let_there_be_light", <item:immersiveengineering:electric_lantern>, [
     [<item:createdeco:cast_iron_sheet>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_sheet>],
     [<item:create:framed_glass_pane>, <item:immersiveengineering:light_bulb>, <item:create:framed_glass_pane>],
     [<item:createdeco:cast_iron_sheet>, <item:createaddition:copper_wire>, <item:createdeco:cast_iron_sheet>]]);
-//Fluid Pipe
+ //Fluid Pipe
 craftingTable.addShaped("metal_tube_thing", <item:immersiveengineering:fluid_pipe> * 4, [
     [<item:create:iron_sheet>],
     [<item:minecraft:iron_ingot>],
     [<item:create:iron_sheet>]]);
-//Copper Coil Block
+ //Copper Coil Block
 craftingTable.addShaped("thats_a_lotta_copper", <item:immersiveengineering:coil_lv>, [
     [<item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:wirecoil_copper>],
     [<item:immersiveengineering:wirecoil_copper>, <item:alloyed:steel_ingot>, <item:immersiveengineering:wirecoil_copper>],
     [<item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:wirecoil_copper>, <item:immersiveengineering:wirecoil_copper>]]);
-//Electrum Coil Block
+ //Electrum Coil Block
 craftingTable.addShaped("thats_a_lotta_electrum", <item:immersiveengineering:coil_mv>, [
     [<item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:wirecoil_electrum>],
     [<item:immersiveengineering:wirecoil_electrum>, <item:alloyed:steel_ingot>, <item:immersiveengineering:wirecoil_electrum>],
     [<item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:wirecoil_electrum>, <item:immersiveengineering:wirecoil_electrum>]]);
-//High-Voltage Coil Block
+ //High-Voltage Coil Block
 craftingTable.addShaped("thats_a_lotta_zappy_generating_stuff", <item:immersiveengineering:coil_hv>, [
     [<item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>],
     [<item:immersiveengineering:wirecoil_steel>, <item:alloyed:steel_ingot>, <item:immersiveengineering:wirecoil_steel>],
     [<item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>, <item:immersiveengineering:wirecoil_steel>]]);
-//Wooden Wallmount
+ //Wooden Wallmount
 craftingTable.addShaped("wooden_rubberducky_holder", <item:immersiveengineering:treated_wallmount> * 2, [
-    [<tag:items:handcrafted:boards>, <tag:items:forge:rods/wooden>],
-    [<item:minecraft:air>, <tag:items:handcrafted:boards>]]);
-//Aluminium Wallmount
+    [<tag:items:minecraft:wooden_pressure_plates>, <tag:items:forge:rods/wooden>],
+    [<item:minecraft:air>, <tag:items:minecraft:wooden_pressure_plates>]]);
+ //Aluminium Wallmount
 craftingTable.addShaped("aluminum_rubberducky_holder", <item:immersiveengineering:alu_wallmount> * 2, [
     [<item:immersiveengineering:plate_aluminum>, <item:immersiveengineering:stick_aluminum>],
     [<item:minecraft:air>, <item:immersiveengineering:plate_aluminum>]]);
-//Steel Wallmount
+ //Steel Wallmount
 craftingTable.addShaped("steel_rubberducky_holder", <item:immersiveengineering:steel_wallmount> * 2, [
     [<item:alloyed:steel_sheet>, <item:immersiveengineering:stick_steel>],
     [<item:minecraft:air>, <item:alloyed:steel_sheet>]]);
-//Precision Scope
+ //Precision Scope
 craftingTable.addShaped("360_no_sco-ohh..", <item:immersiveengineering:toolupgrade_railgun_scope>, [
     [<item:create:brass_sheet>, <item:extendedgears:iron_cogwheel>, <item:alloyed:steel_sheet>],
     [<item:minecraft:amethyst_shard>, <item:create:brass_nugget>, <item:alloyed:steel_sheet>]]);
-//Advanced Heatsinks
+ //Advanced Heatsinks
 craftingTable.addShaped("this_is_kinda_op", <item:immersiveengineering:toolupgrade_railgun_capacitors>, [
     [<item:minecraft:air>, <item:minecraft:air>, <item:immersiveengineering:plate_constantan>],
     [<item:minecraft:air>, <item:immersiveengineering:plate_constantan>, <item:minecraft:netherite_ingot>],
     [<item:immersiveengineering:plate_constantan>, <item:minecraft:netherite_ingot>, <item:create:copper_sheet>]]);
-//Breaker Switch
+ //Breaker Switch
 craftingTable.addShaped("insert_fnaf_powerdown_sound_here", <item:immersiveengineering:breaker_switch>, [
     [<item:create:copper_sheet>, <tag:items:forge:rods/wooden>, <item:create:copper_sheet>],
     [<item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>]]);
-//LV Accumulator
+ //LV Accumulator
 craftingTable.addShaped("lv_zappy_storage", <item:immersiveengineering:capacitor_lv>, [
     [<item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>],
     [<item:create:copper_sheet>, <item:immersiveengineering:plate_lead>, <item:create:copper_sheet>],
     [<tag:items:minecraft:planks>, <item:immersiveengineering:redstone_acid_bucket>, <tag:items:minecraft:planks>]]);
-//MV Accumulator
+ //MV Accumulator
 craftingTable.addShaped("mv_zappy_storage", <item:immersiveengineering:capacitor_mv>, [
     [<item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>],
     [<item:immersiveengineering:plate_nickel>, <item:immersiveengineering:plate_lead>, <item:create:iron_sheet>],
     [<tag:items:minecraft:planks>, <item:immersiveengineering:redstone_acid_bucket>, <tag:items:minecraft:planks>]]);
-//HV Accumulator
+ //HV Accumulator
 craftingTable.addShaped("dangerous_hv_zappy_storage", <item:immersiveengineering:capacitor_hv>, [
     [<item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>],
     [<item:immersiveengineering:plate_aluminum>, <item:immersiveengineering:plate_lead>, <item:immersiveengineering:ingot_hop_graphite>],
     [<tag:items:minecraft:planks>, <item:immersiveengineering:redstone_acid_bucket>, <tag:items:minecraft:planks>]]);
-//LV Connector
+ //LV Connector
 craftingTable.addShaped("lv_connectorio", <item:immersiveengineering:connector_lv> * 4, [
     [<item:minecraft:air>, <item:minecraft:copper_ingot>, <item:minecraft:air>],
     [<item:minecraft:terracotta>, <item:minecraft:copper_ingot>, <item:minecraft:terracotta>],
     [<item:minecraft:terracotta>, <item:minecraft:copper_ingot>, <item:minecraft:terracotta>]]);
-//LV Relay
+ //LV Relay
 craftingTable.addShaped("lv_relaio", <item:immersiveengineering:connector_lv_relay> * 4, [
     [<item:minecraft:air>, <item:minecraft:copper_ingot>, <item:minecraft:air>],
     [<item:minecraft:terracotta>, <item:minecraft:copper_ingot>, <item:minecraft:terracotta>]]);
-//MV Connector
+ //MV Connector
 craftingTable.addShaped("mv_connectorio", <item:immersiveengineering:connector_mv> * 4, [
     [<item:minecraft:air>, <item:immersiveengineering:ingot_electrum>, <item:minecraft:air>],
     [<item:minecraft:terracotta>, <item:immersiveengineering:ingot_electrum>, <item:minecraft:terracotta>],
     [<item:minecraft:terracotta>, <item:immersiveengineering:ingot_electrum>, <item:minecraft:terracotta>]]);
-//MV Relay
+ //MV Relay
 craftingTable.addShaped("mv_relaio", <item:immersiveengineering:connector_mv_relay> * 4, [
     [<item:minecraft:air>, <item:immersiveengineering:ingot_electrum>, <item:minecraft:air>],
     [<item:minecraft:terracotta>, <item:immersiveengineering:ingot_electrum>, <item:minecraft:terracotta>]]);
-//HV Connector
+ //HV Connector
 craftingTable.addShaped("hv_connectorio", <item:immersiveengineering:connector_hv> * 4, [
     [<item:minecraft:air>, <item:immersiveengineering:ingot_aluminum>, <item:minecraft:air>],
     [<item:minecraft:terracotta>, <item:immersiveengineering:ingot_aluminum>, <item:minecraft:terracotta>],
     [<item:minecraft:terracotta>, <item:immersiveengineering:ingot_aluminum>, <item:minecraft:terracotta>]]);
-//HV Relay
+ //HV Relay
 craftingTable.addShaped("hv_relaio", <item:immersiveengineering:connector_hv_relay> * 4, [
     [<item:minecraft:air>, <item:immersiveengineering:ingot_aluminum>, <item:minecraft:air>],
     [<item:immersiveengineering:insulating_glass>, <item:immersiveengineering:ingot_aluminum>, <item:immersiveengineering:insulating_glass>]]);
-//Insulating Glass
+ //Insulating Glass
 craftingTable.addShaped("you_shall_not_pass", <item:immersiveengineering:insulating_glass> * 2, [
     [<item:minecraft:air>, <item:minecraft:glass>, <item:minecraft:air>],
     [<item:create:crushed_iron_ore>, <item:minecraft:green_dye>, <item:create:crushed_iron_ore>],
     [<item:minecraft:air>, <item:minecraft:glass>, <item:minecraft:air>]]);
-//Redstone Wire Connector
+ //Redstone Wire Connector
 craftingTable.addShaped("redstone_connectorio", <item:immersiveengineering:connector_redstone>, [
     [<item:create:brass_nugget>, <item:create:brass_nugget>, <item:create:brass_nugget>],
     [<item:minecraft:terracotta>, <item:minecraft:redstone>, <item:minecraft:terracotta>]]);
-//Redstone Interface Connector
+ //Redstone Interface Connector
 craftingTable.addShaped("interfacing_thingy", <item:immersiveengineering:connector_bundled>, [
     [<item:minecraft:air>, <item:immersiveengineering:wire_aluminum>, <item:minecraft:air>],
     [<item:immersiveengineering:wire_aluminum>, <item:immersiveengineering:connector_redstone>, <item:immersiveengineering:wire_aluminum>],
     [<item:minecraft:air>, <item:immersiveengineering:component_electronic>, <item:minecraft:air>]]);
-//Redstone Probe Connector
+ //Redstone Probe Connector
 craftingTable.addShaped("pokes_at_the_thing_it_probes", <item:immersiveengineering:connector_probe>, [
     [<item:minecraft:air>, <item:immersiveengineering:connector_redstone>, <item:minecraft:air>],
     [<item:minecraft:glass_pane>, <item:immersiveengineering:circuit_board>, <item:minecraft:glass_pane>],
     [<item:createaddition:copper_wire>, <item:immersiveengineering:component_electronic_adv>, <item:minecraft:quartz>]]);
-//Logic Unit
+ //Structural Cable Connector
+craftingTable.addShaped("thing_you_loopedy_loop_a_structural_cable_around", <item:immersiveengineering:connector_structural> * 2, [
+    [<item:minecraft:air>, <item:immersiveengineering:stick_steel>, <item:minecraft:air>],
+    [<item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>]]);
+ //Well this was painful
+ //Steel Scaffolding
+craftingTable.addShaped("steel_scarffolding", <item:immersiveengineering:steel_scaffolding_standard> * 6, [
+    [<item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>],
+    [<item:minecraft:air>, <item:immersiveengineering:stick_steel>, <item:minecraft:air>],
+    [<item:immersiveengineering:stick_steel>, <item:minecraft:air>, <item:immersiveengineering:stick_steel>]]);
+craftingTable.addShapeless("gss2ss", <item:immersiveengineering:steel_scaffolding_standard>, [<item:immersiveengineering:steel_scaffolding_grate_top>]);
+craftingTable.addShapeless("ss2gss", <item:immersiveengineering:steel_scaffolding_grate_top>, [<item:immersiveengineering:steel_scaffolding_standard>]);
+ //Wooden Top Steel Scaffolding
+craftingTable.addShapeless("ss2wtss", <item:immersiveengineering:steel_scaffolding_wooden_top>, [<item:immersiveengineering:steel_scaffolding_standard>, <tag:items:minecraft:wooden_pressure_plates>]);
+ //Steel Scaffolding Slab
+craftingTable.addShaped("steel_ethoslab", <item:immersiveengineering:slab_steel_scaffolding_standard> * 6, [
+    [<item:immersiveengineering:steel_scaffolding_standard>, <item:immersiveengineering:steel_scaffolding_standard>, <item:immersiveengineering:steel_scaffolding_standard>]]);
+ //Gratet Steel Scaffolding
+craftingTable.addShapeless("gsss2sss", <item:immersiveengineering:slab_steel_scaffolding_standard>, [<item:immersiveengineering:slab_steel_scaffolding_grate_top>]);
+craftingTable.addShapeless("sss2gsss", <item:immersiveengineering:slab_steel_scaffolding_grate_top>, [<item:immersiveengineering:slab_steel_scaffolding_standard>]);
+ //Wooden Top Steel Scaffolding Slab
+craftingTable.addShaped("steel_wt_ethoslab", <item:immersiveengineering:slab_steel_scaffolding_wooden_top> * 6, [
+    [<item:immersiveengineering:steel_scaffolding_wooden_top>, <item:immersiveengineering:steel_scaffolding_wooden_top>, <tag:items:minecraft:wooden_pressure_plates>]]);
+craftingTable.addShapeless("ses2wtses", <item:immersiveengineering:slab_steel_scaffolding_wooden_top>, [<item:immersiveengineering:slab_steel_scaffolding_standard>, <tag:items:minecraft:wooden_pressure_plates>]);
+ //Steel Scaffolding Stair
+craftingTable.addShaped("steel_scarffolding_stair", <item:immersiveengineering:stairs_steel_scaffolding_standard> * 6, [
+    [<item:immersiveengineering:steel_scaffolding_standard>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:immersiveengineering:steel_scaffolding_standard>, <item:immersiveengineering:steel_scaffolding_standard>, <item:minecraft:air>],
+    [<item:immersiveengineering:steel_scaffolding_standard>, <item:immersiveengineering:steel_scaffolding_standard>, <item:immersiveengineering:steel_scaffolding_standard>]]);
+ //Wooden Top Steel Scaffolding Stairs
+craftingTable.addShaped("wooden_top_steel_scarffolding_stair", <item:immersiveengineering:stairs_steel_scaffolding_wooden_top> * 6, [
+    [<item:immersiveengineering:steel_scaffolding_wooden_top>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:immersiveengineering:steel_scaffolding_wooden_top>, <item:immersiveengineering:steel_scaffolding_wooden_top>, <item:minecraft:air>],
+    [<item:immersiveengineering:steel_scaffolding_wooden_top>, <item:immersiveengineering:steel_scaffolding_wooden_top>, <item:immersiveengineering:steel_scaffolding_wooden_top>]]);
+craftingTable.addShapeless("ssst2wtssst", <item:immersiveengineering:stairs_steel_scaffolding_wooden_top>, [<item:immersiveengineering:stairs_steel_scaffolding_standard>, <tag:items:minecraft:wooden_pressure_plates>]);
+ //Gratet Steel Scaffolding Stairs
+craftingTable.addShaped("gratet_steel_scarffolding_stair", <item:immersiveengineering:stairs_steel_scaffolding_grate_top> * 6, [
+    [<item:immersiveengineering:steel_scaffolding_grate_top>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:immersiveengineering:steel_scaffolding_grate_top>, <item:immersiveengineering:steel_scaffolding_grate_top>, <item:minecraft:air>],
+    [<item:immersiveengineering:steel_scaffolding_grate_top>, <item:immersiveengineering:steel_scaffolding_grate_top>, <item:immersiveengineering:steel_scaffolding_grate_top>]]);
+craftingTable.addShapeless("gssst2ssst", <item:immersiveengineering:stairs_steel_scaffolding_standard>, [<item:immersiveengineering:stairs_steel_scaffolding_grate_top>]);
+craftingTable.addShapeless("ssst2gssst", <item:immersiveengineering:stairs_steel_scaffolding_grate_top>, [<item:immersiveengineering:stairs_steel_scaffolding_standard>]);
+ //Steel Structural Arm
+craftingTable.addShaped("steel_scarffolding_slope", <item:immersiveengineering:steel_slope> * 12, [
+    [<item:immersiveengineering:steel_scaffolding_standard>, <item:immersiveengineering:steel_scaffolding_standard>, <item:immersiveengineering:steel_scaffolding_standard>],
+    [<item:immersiveengineering:steel_scaffolding_standard>, <item:immersiveengineering:steel_scaffolding_standard>, <item:minecraft:air>],
+    [<item:immersiveengineering:steel_scaffolding_standard>, <item:minecraft:air>, <item:minecraft:air>]]);
+ //Steel Fence
+craftingTable.addShaped("steel_fence", <item:immersiveengineering:steel_fence> * 3, [
+    [<item:alloyed:steel_ingot>, <item:immersiveengineering:stick_steel>, <item:alloyed:steel_ingot>],
+    [<item:alloyed:steel_ingot>, <item:immersiveengineering:stick_steel>, <item:alloyed:steel_ingot>]]);
+ //Hi I just wanted to say that you are probably an amazing person
+ //Aluminium Scaffolding
+craftingTable.addShaped("aluminium_scarffolding", <item:immersiveengineering:alu_scaffolding_standard> * 6, [
+    [<item:immersiveengineering:ingot_aluminum>, <item:immersiveengineering:ingot_aluminum>, <item:immersiveengineering:ingot_aluminum>],
+    [<item:minecraft:air>, <tag:items:forge:rods/aluminum>, <item:minecraft:air>],
+    [<tag:items:forge:rods/aluminum>, <item:minecraft:air>, <tag:items:forge:rods/aluminum>]]);
+craftingTable.addShapeless("gas2as", <item:immersiveengineering:alu_scaffolding_standard>, [<item:immersiveengineering:alu_scaffolding_grate_top>]);
+craftingTable.addShapeless("as2gas", <item:immersiveengineering:alu_scaffolding_grate_top>, [<item:immersiveengineering:alu_scaffolding_standard>]);
+ //Wooden Top Aluminium Scaffolding
+craftingTable.addShapeless("as2wtas", <item:immersiveengineering:alu_scaffolding_wooden_top>, [<item:immersiveengineering:alu_scaffolding_standard>, <tag:items:minecraft:wooden_pressure_plates>]);
+ //Aluminium Scaffolding Slab
+craftingTable.addShaped("alu_ethoslab", <item:immersiveengineering:slab_alu_scaffolding_standard> * 6, [
+    [<item:immersiveengineering:alu_scaffolding_standard>, <item:immersiveengineering:alu_scaffolding_standard>, <item:immersiveengineering:alu_scaffolding_standard>]]);
+ //Gratet Aluminium Scaffolding Slab
+craftingTable.addShapeless("gass2ass", <item:immersiveengineering:slab_alu_scaffolding_standard>, [<item:immersiveengineering:slab_alu_scaffolding_grate_top>]);
+craftingTable.addShapeless("ass2gass", <item:immersiveengineering:slab_alu_scaffolding_grate_top>, [<item:immersiveengineering:slab_alu_scaffolding_standard>]);
+ //Wooden Top Aluminium Scaffolding Slab
+craftingTable.addShaped("alu_wt_ethoslab", <item:immersiveengineering:slab_alu_scaffolding_wooden_top> * 6, [
+    [<item:immersiveengineering:alu_scaffolding_wooden_top>, <item:immersiveengineering:alu_scaffolding_wooden_top>, <item:immersiveengineering:alu_scaffolding_wooden_top>]]);
+craftingTable.addShapeless("aes2wtaes", <item:immersiveengineering:slab_alu_scaffolding_wooden_top>, [<item:immersiveengineering:slab_alu_scaffolding_standard>, <tag:items:minecraft:wooden_pressure_plates>]);
+ //Aluminium Scaffolding Stair
+craftingTable.addShaped("alu_scarffolding_stair", <item:immersiveengineering:stairs_alu_scaffolding_standard> * 6, [
+    [<item:immersiveengineering:alu_scaffolding_standard>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:immersiveengineering:alu_scaffolding_standard>, <item:immersiveengineering:alu_scaffolding_standard>, <item:minecraft:air>],
+    [<item:immersiveengineering:alu_scaffolding_standard>, <item:immersiveengineering:alu_scaffolding_standard>, <item:immersiveengineering:alu_scaffolding_standard>]]);
+ //Wooden Top Aluminium Scaffolding Stairs
+craftingTable.addShaped("wooden_top_alu_scarffolding_stair", <item:immersiveengineering:stairs_alu_scaffolding_wooden_top> * 6, [
+    [<item:immersiveengineering:alu_scaffolding_wooden_top>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:immersiveengineering:alu_scaffolding_wooden_top>, <item:immersiveengineering:alu_scaffolding_wooden_top>, <item:minecraft:air>],
+    [<item:immersiveengineering:alu_scaffolding_wooden_top>, <item:immersiveengineering:alu_scaffolding_wooden_top>, <item:immersiveengineering:alu_scaffolding_wooden_top>]]);
+craftingTable.addShapeless("asst2wtasst", <item:immersiveengineering:stairs_alu_scaffolding_wooden_top>, [<item:immersiveengineering:stairs_alu_scaffolding_standard>, <tag:items:minecraft:wooden_pressure_plates>]);
+ //Gratet Aluminium Scaffolding Stairs
+craftingTable.addShaped("gratet_alu_scarffolding_stair", <item:immersiveengineering:stairs_alu_scaffolding_grate_top> * 6, [
+    [<item:immersiveengineering:alu_scaffolding_grate_top>, <item:minecraft:air>, <item:minecraft:air>],
+    [<item:immersiveengineering:alu_scaffolding_grate_top>, <item:immersiveengineering:alu_scaffolding_grate_top>, <item:minecraft:air>],
+    [<item:immersiveengineering:alu_scaffolding_grate_top>, <item:immersiveengineering:alu_scaffolding_grate_top>, <item:immersiveengineering:alu_scaffolding_grate_top>]]);
+craftingTable.addShapeless("gasst2asst", <item:immersiveengineering:stairs_alu_scaffolding_standard>, [<item:immersiveengineering:stairs_alu_scaffolding_grate_top>]);
+craftingTable.addShapeless("asst2gasst", <item:immersiveengineering:stairs_alu_scaffolding_grate_top>, [<item:immersiveengineering:stairs_alu_scaffolding_standard>]);
+ //Aluminium Structural Arm
+craftingTable.addShaped("alu_scarffolding_slope", <item:immersiveengineering:alu_slope> * 12, [
+    [<item:immersiveengineering:alu_scaffolding_standard>, <item:immersiveengineering:alu_scaffolding_standard>, <item:immersiveengineering:alu_scaffolding_standard>],
+    [<item:immersiveengineering:alu_scaffolding_standard>, <item:immersiveengineering:alu_scaffolding_standard>, <item:minecraft:air>],
+    [<item:immersiveengineering:alu_scaffolding_standard>, <item:minecraft:air>, <item:minecraft:air>]]);
+ //Aluminium Fence
+craftingTable.addShaped("alu_fence", <item:immersiveengineering:alu_fence> * 3, [
+    [<item:immersiveengineering:ingot_aluminum>, <item:immersiveengineering:stick_aluminum>, <item:immersiveengineering:ingot_aluminum>],
+    [<item:immersiveengineering:ingot_aluminum>, <item:immersiveengineering:stick_aluminum>, <item:immersiveengineering:ingot_aluminum>]]);
+ //Wood Scarffolding
+craftingTable.addShaped("wood_scarffolding", <item:immersiveengineering:treated_scaffold> * 6, [
+    [<tag:items:minecraft:wooden_pressure_plates>, <tag:items:minecraft:wooden_pressure_plates>, <tag:items:minecraft:wooden_pressure_plates>],
+    [<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:minecraft:air>],
+    [<tag:items:forge:rods/wooden>, <item:minecraft:air>, <tag:items:forge:rods/wooden>]]);
+ //Logic Unit
 <recipetype:create:mechanical_crafting>.addRecipe("1plus1equals3", <item:immersiveengineering:logic_unit>, [[<item:minecraft:air>, <item:alloyed:steel_sheet>, <item:immersiveengineering:component_electronic>, <item:alloyed:steel_sheet>, <item:minecraft:air>], 
                                                                                                             [<item:create:golden_sheet>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:golden_sheet>],
 																											[<tag:items:minecraft:planks>, <item:create:electron_tube>, <item:immersiveengineering:wirecoil_copper>, <item:create:electron_tube>, <tag:items:minecraft:planks>],
 																											[<item:create:golden_sheet>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:golden_sheet>],
 																				                            [<item:minecraft:air>, <item:alloyed:steel_sheet>, <item:immersiveengineering:component_electronic>, <item:alloyed:steel_sheet>, <item:minecraft:air>]]);
-//Floodlight
+ //Floodlight
 <recipetype:create:mechanical_crafting>.addRecipe("huge_blindy_thing", <item:immersiveengineering:floodlight>, [[<item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>, <item:immersiveengineering:wirecoil_copper>, <item:alloyed:steel_ingot>], 
                                                                                                                 [<item:create:framed_glass_pane>, <item:immersiveengineering:plate_aluminum>, <item:immersiveengineering:light_bulb>, <item:minecraft:iron_ingot>, <item:alloyed:steel_ingot>],
 																											    [<item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>, <item:immersiveengineering:wirecoil_copper>, <item:minecraft:air>],
 																				                                [<item:minecraft:air>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:minecraft:air>]]);
-//Transformer
+ //Transformer
 <recipetype:create:mechanical_crafting>.addRecipe("no_not_that_kind_of_transformer", <item:immersiveengineering:transformer>, [[<item:immersiveengineering:connector_mv>, <item:createdeco:cast_iron_sheet>, <item:immersiveengineering:connector_lv>], 
                                                                                                                                [<item:alloyed:steel_ingot>, <item:immersiveengineering:coil_mv>, <item:alloyed:steel_ingot>],
 																											                   [<item:createdeco:cast_iron_ingot>, <item:minecraft:iron_block>, <item:createdeco:cast_iron_ingot>],
 																											                   [<item:alloyed:steel_ingot>, <item:immersiveengineering:coil_mv>, <item:alloyed:steel_ingot>],
 																				                                               [<item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>]]);
-//HV Transformer
+ //HV Transformer
 <recipetype:create:mechanical_crafting>.addRecipe("the_shocking_converter_box", <item:immersiveengineering:transformer_hv>, [[<item:immersiveengineering:connector_hv>, <item:createdeco:cast_iron_sheet>, <item:immersiveengineering:connector_mv>], 
                                                                                                                              [<item:alloyed:steel_ingot>, <item:immersiveengineering:coil_hv>, <item:alloyed:steel_ingot>],
 																											                 [<item:createdeco:cast_iron_ingot>, <item:minecraft:iron_block>, <item:createdeco:cast_iron_ingot>],
 																											                 [<item:alloyed:steel_ingot>, <item:immersiveengineering:coil_hv>, <item:alloyed:steel_ingot>],
 																				                                             [<item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>]]);
-//Railgun
+ //Railgun
 <recipetype:create:mechanical_crafting>.addRecipe("haha_rod_go_le_zoom", <item:immersiveengineering:railgun>, [[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:create:nixie_tube>, <item:minecraft:air>], 
                                                                                                                [<item:createbigcannons:nethersteel_ingot>, <item:createbigcannons:nethersteel_ingot>, <item:createbigcannons:nethersteel_ingot>, <item:ae2:certus_quartz_crystal>, <item:immersiveengineering:component_electronic_adv>],
 																											   [<item:immersiveengineering:coil_mv>, <item:immersiveengineering:coil_mv>, <item:immersiveengineering:coil_mv>, <item:immersiveengineering:capacitor_mv>, <item:immersiveengineering:wirecoil_copper>],
 																											   [<item:createbigcannons:nethersteel_ingot>, <item:createbigcannons:nethersteel_ingot>, <item:createbigcannons:nethersteel_ingot>, <item:minecraft:netherite_ingot>, <item:immersiveengineering:circuit_board>],
 																				                               [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:immersiveengineering:wooden_grip>, <item:minecraft:air>]]);
-//Redstone Breaker
+ //Redstone Breaker
 <recipetype:create:mechanical_crafting>.addRecipe("relay_go_clicky_click", <item:immersiveengineering:redstone_breaker>, [[<item:immersiveengineering:connector_mv>, <item:create:copper_sheet>, <item:create:copper_sheet>, <item:immersiveengineering:connector_mv>], 
                                                                                                                           [<item:minecraft:redstone>, <item:immersiveengineering:wirecoil_copper>, <item:create:electron_tube>, <item:minecraft:redstone>],
 																				                                          [<item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>, <item:createdeco:cast_iron_ingot>]]);
