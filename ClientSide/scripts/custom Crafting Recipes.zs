@@ -7,6 +7,7 @@ import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.recipe.FurnaceRecipeManager;
+import mods.jei.JEI;
 
 //[]Vanilla
  //Tuff
@@ -39,7 +40,7 @@ craftingTable.remove(<item:create:weighted_ejector>);
 craftingTable.addShaped("weeeeeeeeeeee", <item:create:weighted_ejector>, [
     [<item:minecraft:air>, <item:create:golden_sheet>, <item:minecraft:air>],
     [<item:createbigcannons:recoil_spring>, <item:create:depot>, <item:createbigcannons:recoil_spring>],
-    [<item:minecraft:air>, <tag:items:forge:cogwheels>, <item:minecraft:air>]]);
+    [<item:minecraft:air>, <tag:items:extendedgears:small_cogwheel>, <item:minecraft:air>]]);
  //Electron Tube
 craftingTable.remove(<item:create:electron_tube>);
 craftingTable.addShaped("ebut-nortcele", <item:create:electron_tube>, [
@@ -77,9 +78,54 @@ craftingTable.addShaped("the_thing_that_measures_how_much_you_will_get_shocked_i
 
 
 
+//[]Valkyrien Skies Clockwork :D
+ //Physics Infuser
+craftingTable.addShaped("nwo_you_can_fly_with_a_gravity_gun_and_a_chair", <item:vs_clockwork:physics_infuser>, [
+    [<item:minecraft:gold_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>],
+    [<item:minecraft:iron_ingot>, <item:minecraft:apple>, <item:minecraft:iron_ingot>],
+    [<item:minecraft:gold_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>]]);
+ //Propeller Bearing
+craftingTable.addShaped("haha_spinny_prop_go_wewewewewewewewewewewewewewewewewe", <item:vs_clockwork:propellor_bearing>, [
+    [<item:minecraft:air>, <tag:items:minecraft:wooden_slabs>, <item:minecraft:air>],
+    [<item:minecraft:redstone>, <item:create:andesite_casing>, <item:minecraft:redstone>],
+    [<item:minecraft:air>, <item:create:shaft>, <item:minecraft:air>]]);
+ //Flap Bearing
+craftingTable.addShaped("flappy_flapps", <item:vs_clockwork:flap_bearing>, [
+    [<item:create:iron_sheet>, <item:create:golden_sheet>, <item:create:iron_sheet>],
+    [<item:minecraft:redstone>, <item:create:andesite_casing>, <item:immersiveengineering:component_electronic>],
+    [<item:minecraft:air>, <item:create:shaft>, <item:minecraft:air>]]);
+ //Ballooner
+craftingTable.addShaped("duck_tales_mun_theme_intensifies", <item:vs_clockwork:ballooner>, [
+    [<item:create:iron_sheet>, <item:create:golden_sheet>, <item:create:iron_sheet>],
+    [<item:minecraft:redstone>, <item:create:andesite_casing>, <item:immersiveengineering:component_electronic>],
+    [<item:minecraft:air>, <item:create:shaft>, <item:minecraft:air>]]);
+ //Afterblazer
+craftingTable.addShaped("afterburners_wwweeeeeee", <item:vs_clockwork:afterblazer>, [
+    [<tag:items:forge:ingots/nickel>, <tag:items:forge:plates/nickel>, <item:create:precision_mechanism>],
+    [<item:createbigcannons:nethersteel_ingot>, <item:create:blaze_burner>, <item:createbigcannons:nethersteel_ingot>],
+    [<tag:items:forge:ingots/steel>, <item:create:shaft>, <tag:items:forge:ingots/steel>]]);
+ //Intake
+craftingTable.addShaped("dont_throw_a_wrench_in_here", <item:vs_clockwork:intake>, [
+    [<item:minecraft:iron_ingot>, <item:create:shaft>, <item:minecraft:iron_ingot>],
+    [<item:create:iron_sheet>, <tag:items:forge:plates/aluminum>, <item:create:iron_sheet>],
+    [<item:create:iron_sheet>, <item:minecraft:air>, <item:create:iron_sheet>]]);
+ //Redstone Resistor
+craftingTable.addShaped("its_actually_more_of_a_brake", <item:vs_clockwork:redstone_resistor>, [
+    [<tag:items:chipped:redstone_torch>, <item:create:shaft>, <tag:items:forge:rods/steel>],
+    [<item:minecraft:redstone>, <item:createdeco:cast_iron_ingot>, <item:createbigcannons:spring_wire>],
+    [<item:immersiveengineering:component_electronic>, <item:create:andesite_casing>, <item:alloyed:steel_sheet>]]);
+ //Combustion Engine
+<recipetype:create:mechanical_crafting>.addRecipe("gas_gas_gas", <item:vs_clockwork:combustion_engine>, [[<item:minecraft:air>, <item:create:copper_sheet>, <item:immersiveengineering:component_electronic_adv>, <item:create:copper_sheet>, <item:minecraft:air>], 
+                                                                                                         [<item:minecraft:quartz>, <item:immersiveengineering:wirecoil_copper>, <item:minecraft:quartz>, <item:create:precision_mechanism>, <item:minecraft:quartz>],
+																										 [<item:createaddition:copper_wire>, <tag:items:forge:ingots/steel>, <item:createaddition:copper_wire>, <tag:items:forge:ingots/steel>, <item:createaddition:copper_wire>],
+																										 [<item:createbigcannons:nethersteel_ingot>, <item:create:shaft>, <item:createbigcannons:nethersteel_ingot>, <item:create:shaft>, <item:createbigcannons:nethersteel_ingot>],
+																				                         [<item:minecraft:air>, <item:create:copper_sheet>, <tag:items:forge:ingots/steel>, <item:create:copper_sheet>, <item:minecraft:air>]]);
+
+
+
 //[]Applied Energistics 2
  //Meteorite Compass
-craftingTable.addShapeless("pointer_to_big_space_boulder", <item:ae2:meteorite_compass>, [<item:minecraft:compass>, <item:ae2:charged_certus_quartz_crystal>]);
+craftingTable.addShapeless("pointer_to_big_space_boulder", <item:ae2:sky_compass>, [<item:minecraft:compass>, <item:ae2:charged_certus_quartz_crystal>]);
  //Cell Housing
 craftingTable.remove(<item:ae2:item_cell_housing>);
 craftingTable.addShaped("chip_ba-_uhh_box", <item:ae2:item_cell_housing>, [
@@ -212,6 +258,8 @@ craftingTable.remove(<item:computercraft:computer_advanced>);
 
 
 //Immersive Engineering
+ //Silver Grit
+<recipetype:create:crushing>.addRecipe("silver_glittery_dust", [<item:immersiveengineering:dust_silver>], <item:immersiveengineering:ingot_silver>, 200);
  //Duroplast
 <recipetype:create:filling>.addRecipe("duroplast_create", <item:immersiveengineering:plate_duroplast>, <item:minecraft:paper>, <fluid:immersiveengineering:phenolic_resin> * 300, 200);
  //Acetaldehyde
@@ -274,7 +322,7 @@ craftingTable.addShaped("red_swingy_thing", <item:immersiveengineering:wirecoil_
  //Electronic Component
 craftingTable.addShaped("electronic_doodad", <item:immersiveengineering:component_electronic>, [
     [<item:minecraft:quartz>, <item:minecraft:redstone>],
-    [<item:create:brass_sheet>, <tag:items:minecraft:wooden_pressure_plates>]]);
+    [<item:create:golden_sheet>, <tag:items:minecraft:wooden_pressure_plates>]]);
  //Advanced Electronic Component
 craftingTable.addShaped("better_electronic_doodad", <item:immersiveengineering:component_electronic_adv>, [
     [<item:create:electron_tube>, <item:createaddition:gold_wire>, <item:create:electron_tube>],

@@ -4,6 +4,7 @@ import crafttweaker.api.tag.MCTag;
 import mods.create.CompactingManager;
 import mods.create.PressingManager;
 import mods.create.MixingManager;
+import mods.jei.JEI;
 
 //General Item Recipe changes/unionisation	
 
