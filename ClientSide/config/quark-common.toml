@@ -406,7 +406,7 @@
 	"Automatic Recipe Unlock" = true
 	"Armed Armor Stands" = true
 	"Note Block Mob Sounds" = true
-	"Skull Pikes" = true
+	"Skull Pikes" = false
 
 	[tweaks.utility_recipes]
 		#Can any wool color be dyed?
@@ -1447,7 +1447,7 @@
 	"Microcrafting Helper" = true
 	"Improved Tooltips" = true
 	"Greener Grass" = true
-	"Chest Searching" = true
+	"Chest Searching" = false
 	"Back Button Keybind" = true
 	"Auto Walk Keybind" = true
 
@@ -1562,7 +1562,7 @@
 		"Vertical Shift" = 0
 
 [oddities]
-	"Totem Of Holding" = true
+	"Totem Of Holding" = false
 	"Tiny Potato" = true
 	Pipes = false
 	"Matrix Enchanting" = true

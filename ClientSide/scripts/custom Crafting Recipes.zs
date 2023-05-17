@@ -2,6 +2,8 @@ import mods.create.MechanicalCrafterManager;
 import mods.create.CompactingManager;
 import mods.create.MixingManager;
 import mods.create.CrushingManager;
+import mods.create.ItemApplicationManager;
+import mods.create.IProcessingRecipeManager;
 import crafttweaker.api.fluid.FluidIngredient;
 import crafttweaker.api.ingredient.IIngredient;
 import crafttweaker.api.item.IItemStack;
@@ -49,6 +51,11 @@ craftingTable.addShaped("ebut-nortcele", <item:create:electron_tube>, [
     [<item:minecraft:air>, <item:create:iron_sheet>]]);
 craftingTable.addShapeless("vt2et", <item:create:electron_tube>, [<item:immersiveengineering:electron_tube>]);
 craftingTable.addShapeless("et2vt", <item:immersiveengineering:electron_tube>, [<item:create:electron_tube>]);
+ //Fluid Tank
+craftingTable.addShaped("no_not_that_kind_of_tank", <item:create:fluid_tank>, [
+    [<tag:items:forge:rods/iron>, <item:create:copper_sheet>, <tag:items:forge:rods/iron>],
+    [<item:minecraft:glass>, <tag:items:chipped:barrel>, <item:minecraft:glass>],
+    [<tag:items:forge:rods/iron>, <item:create:copper_sheet>, <tag:items:forge:rods/iron>]]);
 	
 
 
@@ -65,7 +72,11 @@ craftingTable.addShaped("zappy_storage", <item:createaddition:modular_accumulato
     [<item:minecraft:air>, <item:createaddition:copper_rod>, <item:minecraft:air>],
     [<item:createaddition:capacitor>, <item:create:brass_casing>, <item:createaddition:capacitor>],
     [<tag:items:ae2:all_certus_quartz>, <item:createaddition:gold_wire>, <tag:items:ae2:all_certus_quartz>]]);
- 
+
+
+//[]Create Big Cannons
+ //Filled Autocannon Cartridge
+craftingTable.addShapeless("filled_pew_pew_stuff", <item:createbigcannons:filled_autocannon_cartridge>, [<item:createbigcannons:empty_autocannon_cartridge>, <item:minecraft:gunpowder>, <item:minecraft:gunpowder>]);
 
 
 //[]Energy Meter
@@ -79,6 +90,12 @@ craftingTable.addShaped("the_thing_that_measures_how_much_you_will_get_shocked_i
 
 
 //[]Valkyrien Skies Clockwork :D
+  //Vanilla Frosting
+<recipetype:create:mixing>.addRecipe("le_vanille_frosting", <constant:create:heat_condition:heated>, [<fluid:vs_clockwork:vanilla_frosting> * 1000], [<item:minecraft:sugar>, <item:minecraft:egg>], [<fluid:minecraft:milk> * 1000, <fluid:create:honey> * 25], 300);
+  //Chocolate Frosting
+<recipetype:create:mixing>.addRecipe("le_chocolate_frosting", <constant:create:heat_condition:heated>, [<fluid:vs_clockwork:chocolate_frosting> * 1000], [], [<fluid:vs_clockwork:vanilla_frosting> * 500, <fluid:create_confectionery:black_chocolate> * 500], 300);
+  //Strawberry Frosting
+<recipetype:create:mixing>.addRecipe("le_strawberry_frosting", <constant:create:heat_condition:superheated>, [<fluid:vs_clockwork:strawberry_frosting> * 1000], [<item:minecraft:potion>.withTag({Potion: "minecraft:harming" as string}), ], [<fluid:vs_clockwork:vanilla_frosting> * 500, <fluid:createaddition:bioethanol> * 500], 300);
  //Physics Infuser
 craftingTable.addShaped("nwo_you_can_fly_with_a_gravity_gun_and_a_chair", <item:vs_clockwork:physics_infuser>, [
     [<item:minecraft:gold_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:gold_ingot>],
@@ -96,9 +113,9 @@ craftingTable.addShaped("flappy_flapps", <item:vs_clockwork:flap_bearing>, [
     [<item:minecraft:air>, <item:create:shaft>, <item:minecraft:air>]]);
  //Ballooner
 craftingTable.addShaped("duck_tales_mun_theme_intensifies", <item:vs_clockwork:ballooner>, [
-    [<item:create:iron_sheet>, <item:create:golden_sheet>, <item:create:iron_sheet>],
-    [<item:minecraft:redstone>, <item:create:andesite_casing>, <item:immersiveengineering:component_electronic>],
-    [<item:minecraft:air>, <item:create:shaft>, <item:minecraft:air>]]);
+    [<item:create:iron_sheet>, <item:minecraft:air>, <item:create:iron_sheet>],
+    [<item:create:iron_sheet>, <item:minecraft:campfire>, <item:create:iron_sheet>],
+    [<item:minecraft:copper_ingot>, <item:create:encased_fan>, <item:minecraft:copper_ingot>]]);
  //Afterblazer
 craftingTable.addShaped("afterburners_wwweeeeeee", <item:vs_clockwork:afterblazer>, [
     [<tag:items:forge:ingots/nickel>, <tag:items:forge:plates/nickel>, <item:create:precision_mechanism>],
@@ -111,9 +128,29 @@ craftingTable.addShaped("dont_throw_a_wrench_in_here", <item:vs_clockwork:intake
     [<item:create:iron_sheet>, <item:minecraft:air>, <item:create:iron_sheet>]]);
  //Redstone Resistor
 craftingTable.addShaped("its_actually_more_of_a_brake", <item:vs_clockwork:redstone_resistor>, [
-    [<tag:items:chipped:redstone_torch>, <item:create:shaft>, <tag:items:forge:rods/steel>],
-    [<item:minecraft:redstone>, <item:createdeco:cast_iron_ingot>, <item:createbigcannons:spring_wire>],
-    [<item:immersiveengineering:component_electronic>, <item:create:andesite_casing>, <item:alloyed:steel_sheet>]]);
+    [<item:minecraft:comparator>, <item:create:clutch>, <item:immersiveengineering:component_electronic>],
+    [<item:minecraft:air>, <tag:items:chipped:redstone_torch>, <item:minecraft:air>]]);
+ //Wing
+craftingTable.addShaped("need_more_lift", <item:vs_clockwork:wing> * 2, [
+    [<item:immersiveengineering:hemp_fabric>, <item:minecraft:stick>],
+    [<item:minecraft:stick>, <item:minecraft:iron_ingot>]]);
+ //Flap
+craftingTable.addShaped("falppy_de_flap_flaps", <item:vs_clockwork:flap> * 2, [
+    [<item:minecraft:iron_ingot>, <item:minecraft:stick>],
+    [<item:minecraft:stick>, <item:immersiveengineering:hemp_fabric>]]);
+ //Bluu Gluu
+craftingTable.addShapeless("blue_slime_thing", <item:vs_clockwork:bluuguu>, [<item:minecraft:slime_ball>, <item:minecraft:blue_dye>]);
+ //Bluperglue
+craftingTable.addShaped("its_glue_but_blue", <item:vs_clockwork:bluperglue>, [
+    [<item:vs_clockwork:bluuguu>, <item:create:iron_sheet>],
+    [<item:minecraft:iron_nugget>, <item:vs_clockwork:bluuguu>]]);
+ //Physics Bearing
+craftingTable.addShaped("spinny_physics_levitate_thing_go_wewewewewewewe", <item:vs_clockwork:phys_bearing>, [
+    [<item:minecraft:slime_ball>, <item:vs_clockwork:physics_infuser>, <item:minecraft:slime_ball>],
+    [<item:create:iron_sheet>, <item:create:andesite_casing>, <item:create:iron_sheet>],
+    [<item:minecraft:air>, <item:create:shaft>, <item:minecraft:air>]]);
+ //Ballon Casing
+<recipetype:create:item_application>.addRecipe("floaty_casing", [<item:vs_clockwork:balloon_casing>], <item:minecraft:white_wool>, <item:minecraft:scaffolding>, false);
  //Combustion Engine
 <recipetype:create:mechanical_crafting>.addRecipe("gas_gas_gas", <item:vs_clockwork:combustion_engine>, [[<item:minecraft:air>, <item:create:copper_sheet>, <item:immersiveengineering:component_electronic_adv>, <item:create:copper_sheet>, <item:minecraft:air>], 
                                                                                                          [<item:minecraft:quartz>, <item:immersiveengineering:wirecoil_copper>, <item:minecraft:quartz>, <item:create:precision_mechanism>, <item:minecraft:quartz>],
@@ -564,6 +601,11 @@ craftingTable.addShaped("wood_scarffolding", <item:immersiveengineering:treated_
     [<tag:items:minecraft:wooden_pressure_plates>, <tag:items:minecraft:wooden_pressure_plates>, <tag:items:minecraft:wooden_pressure_plates>],
     [<item:minecraft:air>, <tag:items:forge:rods/wooden>, <item:minecraft:air>],
     [<tag:items:forge:rods/wooden>, <item:minecraft:air>, <tag:items:forge:rods/wooden>]]);
+ //Metal Barrel
+craftingTable.addShaped("again..._not_that_kind_of_tank", <item:immersiveengineering:metal_barrel>, [
+    [<item:create:iron_sheet>],
+    [<tag:items:chipped:barrel>],
+    [<item:create:iron_sheet>]]);
  //Logic Unit
 <recipetype:create:mechanical_crafting>.addRecipe("1plus1equals3", <item:immersiveengineering:logic_unit>, [[<item:minecraft:air>, <item:alloyed:steel_sheet>, <item:immersiveengineering:component_electronic>, <item:alloyed:steel_sheet>, <item:minecraft:air>], 
                                                                                                             [<item:create:golden_sheet>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:electron_tube>, <item:create:golden_sheet>],
@@ -616,7 +658,7 @@ craftingTable.addShaped("florida_man_will_love_this_thing", <item:sophisticatedb
     [<item:alloyed:steel_sheet>, <item:minecraft:smoker>, <item:alloyed:steel_sheet>]]);
  //Tank Upgrade
 craftingTable.remove(<item:sophisticatedbackpacks:tank_upgrade>);
-craftingTable.addShaped("no_not_that_kind_of_tank", <item:sophisticatedbackpacks:tank_upgrade>, [
+craftingTable.addShaped("how_many_times_do_i_have_to_tell_you_that_its_not_that_kind_of_tank", <item:sophisticatedbackpacks:tank_upgrade>, [
     [<item:create:iron_sheet>, <item:minecraft:barrel>, <item:create:iron_sheet>],
     [<item:create:framed_glass>, <item:sophisticatedbackpacks:upgrade_base>, <item:create:framed_glass>],
     [<item:minecraft:air>, <item:create:iron_sheet>, <item:minecraft:air>]]);

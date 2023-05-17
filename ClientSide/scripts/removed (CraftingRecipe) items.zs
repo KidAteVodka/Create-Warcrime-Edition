@@ -448,6 +448,7 @@ craftingTable.remove(<item:davebuildingmod:green_light_off>);
  JEI.hideIngredient(<item:davebuildingmod:green_light_off>);
 craftingTable.remove(<item:davebuildingmod:blue_light_off>);
  JEI.hideIngredient(<item:davebuildingmod:blue_light_off>);
+
  
 
 
