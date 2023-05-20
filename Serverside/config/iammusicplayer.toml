@@ -11,5 +11,3 @@ retryTime = 3000
 dropItemRing = true
 patchouliIntegration = true
 soundPhysicsRemasteredIntegration = true
-showMusicLines = false
-showSpeakerRange = false

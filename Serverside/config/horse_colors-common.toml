@@ -14,8 +14,10 @@
 	#Whether to use the gray themed gender icons from Genetic Animals (by mokiyoki,
 	#used by permission) in place of the default pink and blue icons.
 	useGeneticAnimalsIcons = false
-	#Whether the player can ride horses that are realistically too small to carry an adult human
-	rideSmallEquines = false
+	#If enabled, right clicking a horse while holding a saddle or horse armor
+	#will equip it (as long as the horse isn't already wearing something in that slot)
+	#instead of opening the inventory.
+	autoEquipSaddle = true
 
 #Config settings related to growth and aging
 [growth]
@@ -57,20 +59,17 @@
 	#Range: > 0
 	pregnancyLength = 24000
 
-#Settings to configure spawning. Note as of Minecraft 1.19 spawn weights are now controlled via json data.
+#Settings to configure spawning
 [spawn]
 	#Whether to allow new vanilla horses to spawn. This will not affect any
 	#horses that already exist.
 	blockVanillaHorseSpawns = true
-	#Whether to allow new vanilla donkeys to spawn. This will not affect any
-	#horses that already exist.
-	blockVanillaDonkeySpawns = true
 	#If this is set to true, existing horses will be turned into horses with genetics
 	convertVanillaHorses = false
-	#If this is set to true, existing donkeys will be turned into donkeys with genetics
-	convertVanillaDonkeys = false
-	#If this is set to true, existing mules will be turned into mules with genetics
-	convertVanillaMules = false
+	#Larger numbers make horses more common, smaller numbers make them less common.
+	#1.0 makes them as common as in vanilla.
+	#Range: 0.0 ~ 1000.0
+	horseSpawnMultiplier = 1.0
 
 #Config settings for genetics
 [genetics]

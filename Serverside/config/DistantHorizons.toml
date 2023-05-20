@@ -417,7 +417,7 @@ _version = 1
 			# BLOCK: render 256 LODs for each Chunk (width of one block). 
 			#
 			# Lowest Quality: CHUNK Highest Quality: BLOCK
-			drawResolution = "BLOCK"
+			drawResolution = "HALF_CHUNK"
 
 	[client.worldGenerator]
 		# In what priority should fake chunks be generated outside the vanilla render distance? 

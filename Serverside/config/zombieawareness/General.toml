@@ -37,11 +37,11 @@
 	#How likely zombies making noise near you will attract other zombies, higher = less likely, 0 = every time they make a noise
 	#Range: > -2147483648
 	noisyZombiesReinforceOddsTo1 = 5
-	#A developer of this mod has defined this config option with a blank comment, which causes obscure bugs in Forge's config system and will cause a crash in the future. Please report this to the mod author.
+	# 
 	debugConsole = false
-	#A developer of this mod has defined this config option with a blank comment, which causes obscure bugs in Forge's config system and will cause a crash in the future. Please report this to the mod author.
+	# 
 	debugConsoleOmniscient = false
-	#A developer of this mod has defined this config option with a blank comment, which causes obscure bugs in Forge's config system and will cause a crash in the future. Please report this to the mod author.
+	# 
 	debugConsoleSuperDetailed = false
 	#Minimum distance required between active sense sources, prevents spamming sources [performance sensitive]
 	#Range: 4.9E-324 ~ 1.7976931348623157E308

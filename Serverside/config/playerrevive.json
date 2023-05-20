@@ -6,13 +6,12 @@
     "bleedingMessage": true,
     "bleedingMessageTrackingOnly": true,
     "shouldGlow": false,
-    "bleedingEffects": [
-      {
-        "effect": "minecraft:slowness",
-        "amplifier": 2,
-        "duration": 10
-      }
-    ],
+    "hasBleedingMobEffect": true,
+    "bleedingMobEffect": {
+      "effect": "minecraft:slowness",
+      "amplifier": 2,
+      "duration": 10
+    },
     "affectHunger": true,
     "remainingHunger": 6,
     "bleedingHealth": 10,
@@ -28,13 +27,12 @@
     "haltBleedTime": true,
     "abortOnDamage": false,
     "resetProgress": false,
-    "revivedEffects": [
-      {
-        "effect": "minecraft:slowness",
-        "amplifier": 2,
-        "duration": 1
-      }
-    ],
+    "hasRevivedMobEffect": false,
+    "revivedMobEffect": {
+      "effect": "minecraft:slowness",
+      "amplifier": 2,
+      "duration": 1
+    },
     "reviveItem": "{id:\"item\",item:\"minecraft:paper\"}",
     "needReviveItem": false,
     "consumeReviveItem": false,

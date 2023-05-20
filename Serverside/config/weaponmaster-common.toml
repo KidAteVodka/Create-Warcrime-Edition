@@ -42,7 +42,6 @@
 	serverwhitelist = false
 
 	[model_options.positions_rotations]
-		#Position and rotation settings
 		#x position0
 		#Range: > -2147483648
 		x_position0 = -33
@@ -61,7 +60,6 @@
 		#z rotation2
 		#Range: > -2147483648
 		z_rotationn2 = -33
-		#Position and rotation settings
 		#x position3
 		#Range: > -2147483648
 		x_position3 = 4
@@ -80,7 +78,6 @@
 		#z rotation5
 		#Range: > -2147483648
 		z_rotationn5 = 57
-		#Position and rotation settings
 		#x position6
 		#Range: > -2147483648
 		x_position6 = -26
@@ -99,7 +96,6 @@
 		#z rotation8
 		#Range: > -2147483648
 		z_rotationn8 = 90
-		#Position and rotation settings
 		#x position9
 		#Range: > -2147483648
 		x_position9 = 26
@@ -118,7 +114,6 @@
 		#z rotation11
 		#Range: > -2147483648
 		z_rotationn11 = 20
-		#Position and rotation settings
 		#x position12
 		#Range: > -2147483648
 		x_position12 = 1
@@ -137,7 +132,6 @@
 		#z rotation14
 		#Range: > -2147483648
 		z_rotationn14 = -30
-		#Position and rotation settings
 		#x position15
 		#Range: > -2147483648
 		x_position15 = 31
@@ -156,7 +150,6 @@
 		#z rotation17
 		#Range: > -2147483648
 		z_rotationn17 = -30
-		#Position and rotation settings
 		#x position18
 		#Range: > -2147483648
 		x_position18 = 4
@@ -175,7 +168,6 @@
 		#z rotation20
 		#Range: > -2147483648
 		z_rotationn20 = -51
-		#Position and rotation settings
 		#x position21
 		#Range: > -2147483648
 		x_position21 = -2
@@ -194,7 +186,6 @@
 		#z rotation23
 		#Range: > -2147483648
 		z_rotationn23 = 45
-		#Position and rotation settings
 		#x position24
 		#Range: > -2147483648
 		x_position24 = 1
@@ -213,7 +204,6 @@
 		#z rotation26
 		#Range: > -2147483648
 		z_rotationn26 = 20
-		#Position and rotation settings
 		#x position27
 		#Range: > -2147483648
 		x_position27 = 0
@@ -232,7 +222,6 @@
 		#z rotation29
 		#Range: > -2147483648
 		z_rotationn29 = 0
-		#Position and rotation settings
 		#x position30
 		#Range: > -2147483648
 		x_position30 = 0
