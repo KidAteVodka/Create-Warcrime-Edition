@@ -135,5 +135,9 @@
 		#Range: 0.1 ~ 1.7976931348623157E308
 		scanEntitiesExtraBlockCost = 0.17
 		#Range: > 1000
-		chatMessageCooldown = 100
+		chatMessageCooldown = 1000
+
+	[Peripherals.Pocket_Peripherals]
+		#If true, pockets will have infinite fuel
+		disablePocketFuelConsumption = true
 

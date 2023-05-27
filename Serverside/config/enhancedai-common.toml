@@ -20,7 +20,7 @@
 	"Enable Anti-Cheese" = true
 	#Makes mobs be able to move in more ways, like climbing or swim.
 	"Enable Movement" = true
-	"Enable Attacking" = true
+	"Enable Attacking" = false
 
 	[Base.Base]
 		#How far away from any player monsters will instantly despawn? Vanilla is 128
