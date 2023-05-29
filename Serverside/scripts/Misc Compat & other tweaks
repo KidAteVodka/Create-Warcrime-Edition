@@ -5,6 +5,7 @@ import mods.create.CompactingManager;
 import mods.create.PressingManager;
 import mods.create.MixingManager;
 import mods.jei.JEI;
+import crafttweaker.api.tag.type.KnownTag;
 
 //General Item Recipe changes/unionisation	
 
@@ -50,6 +51,7 @@ craftingTable.remove(<item:minecraft:rabbit_stew>);
 
 
 
-//Hide unnecessary JEI things
+//Tags thingies
+<tag:items:forge:shields>.add(<tag:items:origins:shields>);
 
 

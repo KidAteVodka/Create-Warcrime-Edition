@@ -121,6 +121,60 @@ craftingTable.remove(<item:computercraft:turtle_advanced>);
 
 
 
+//Advanced Peripherals
+ //Turtles
+craftingTable.remove(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:environment_turtle" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:environment_turtle" as string}));
+craftingTable.remove(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:environment_turtle" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:environment_turtle" as string}));
+craftingTable.remove(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:player_turtle" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:player_turtle" as string}));
+craftingTable.remove(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:player_turtle" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:player_turtle" as string}));
+craftingTable.remove(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:geoscanner_turtle" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:geoscanner_turtle" as string}));
+craftingTable.remove(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:geoscanner_turtle" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:geoscanner_turtle" as string}));
+craftingTable.remove(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:chunky_turtle" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:chunky_turtle" as string}));
+craftingTable.remove(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:chunky_turtle" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:chunky_turtle" as string}));
+craftingTable.remove(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:end_automata" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:end_automata" as string}));
+craftingTable.remove(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:end_automata" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:end_automata" as string}));
+craftingTable.remove(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:weak_automata" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:weak_automata" as string}));
+craftingTable.remove(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:weak_automata" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:weak_automata" as string}));
+craftingTable.remove(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:overpowered_weak_automata" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:overpowered_weak_automata" as string}));
+craftingTable.remove(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:overpowered_weak_automata" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:overpowered_weak_automata" as string}));
+craftingTable.remove(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:overpowered_end_automata" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:overpowered_end_automata" as string}));
+craftingTable.remove(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:overpowered_end_automata" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:overpowered_end_automata" as string}));
+craftingTable.remove(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:overpowered_husbandry_automata" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_advanced>.withTag({RightUpgrade: "advancedperipherals:overpowered_husbandry_automata" as string}));
+craftingTable.remove(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:overpowered_husbandry_automata" as string}));
+ JEI.hideIngredient(<item:computercraft:turtle_normal>.withTag({RightUpgrade: "advancedperipherals:overpowered_husbandry_automata" as string}));
+ //other things
+ JEI.hideIngredient(<item:advancedperipherals:end_automata_core>);
+ JEI.hideIngredient(<item:advancedperipherals:husbandry_automata_core>);
+craftingTable.remove(<item:advancedperipherals:weak_automata_core>);
+ JEI.hideIngredient(<item:advancedperipherals:weak_automata_core>);
+craftingTable.remove(<item:advancedperipherals:overpowered_weak_automata_core>);
+ JEI.hideIngredient(<item:advancedperipherals:overpowered_weak_automata_core>);
+craftingTable.remove(<item:advancedperipherals:overpowered_end_automata_core>);
+ JEI.hideIngredient(<item:advancedperipherals:overpowered_end_automata_core>);
+craftingTable.remove(<item:advancedperipherals:overpowered_husbandry_automata_core>);
+ JEI.hideIngredient(<item:advancedperipherals:overpowered_husbandry_automata_core>);
+craftingTable.remove(<item:advancedperipherals:chunk_controller>);
+ JEI.hideIngredient(<item:advancedperipherals:chunk_controller>);
+
+
+
 //Applied Energistics 2
 craftingTable.remove(<item:ae2:crafting_unit>);
  JEI.hideIngredient(<item:ae2:crafting_unit>);

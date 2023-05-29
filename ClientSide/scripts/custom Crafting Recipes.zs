@@ -294,6 +294,16 @@ craftingTable.remove(<item:computercraft:computer_advanced>);
 
 
 
+//Advanced Peripherals
+ //AR Goggles
+craftingTable.remove(<item:advancedperipherals:ar_goggles>);
+craftingTable.addShaped("halucination_device_but_not_really", <item:advancedperipherals:ar_goggles>, [
+    [<item:computercraft:monitor_normal>, <item:ae2:engineering_processor>, <item:computercraft:monitor_normal>],
+    [<item:ae2:quartz_glass>, <tag:items:forge:rods/aluminum>, <item:ae2:quartz_glass>],
+    [<item:minecraft:air>, <item:computercraft:wireless_modem_normal>, <item:ae2:charged_certus_quartz_crystal>]]);
+
+
+
 //Immersive Engineering
  //Silver Grit
 <recipetype:create:crushing>.addRecipe("silver_glittery_dust", [<item:immersiveengineering:dust_silver>], <item:immersiveengineering:ingot_silver>, 200);
@@ -502,6 +512,11 @@ craftingTable.addShaped("pokes_at_the_thing_it_probes", <item:immersiveengineeri
 craftingTable.addShaped("thing_you_loopedy_loop_a_structural_cable_around", <item:immersiveengineering:connector_structural> * 2, [
     [<item:minecraft:air>, <item:immersiveengineering:stick_steel>, <item:minecraft:air>],
     [<item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>, <item:alloyed:steel_sheet>]]);
+ //Thermoelectric Generator
+craftingTable.addShaped("hot_and_cold_equals_electricity_thingy", <item:immersiveengineering:thermoelectric_generator>, [
+    [<item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>, <item:alloyed:steel_ingot>],
+    [<item:ae2:silicon>, <item:immersiveengineering:coil_lv>, <item:ae2:silicon>],
+    [<item:immersiveengineering:plate_constantan>, <item:immersiveengineering:plate_constantan>, <item:immersiveengineering:plate_constantan>]]);
  //Well this was painful
  //Steel Scaffolding
 craftingTable.addShaped("steel_scarffolding", <item:immersiveengineering:steel_scaffolding_standard> * 6, [
