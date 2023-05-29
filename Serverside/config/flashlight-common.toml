@@ -4,5 +4,5 @@
 	#Default: 32
 	"Flashlight light range" = 32
 	#Default: 12000 (10 min)
-	"Small Redstone Battery lifetime in ticks" = 12000
+	"Small Redstone Battery lifetime in ticks" = 9600
 
