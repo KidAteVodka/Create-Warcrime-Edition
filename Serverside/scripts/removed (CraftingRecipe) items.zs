@@ -502,6 +502,15 @@ craftingTable.remove(<item:davebuildingmod:green_light_off>);
  JEI.hideIngredient(<item:davebuildingmod:green_light_off>);
 craftingTable.remove(<item:davebuildingmod:blue_light_off>);
  JEI.hideIngredient(<item:davebuildingmod:blue_light_off>);
+ 
+
+
+//Tiny Redstone
+ //Silicon
+craftingTable.remove(<item:tinyredstone:silicon_compound>);
+ JEI.hideIngredient(<item:tinyredstone:silicon_compound>);
+craftingTable.remove(<item:tinyredstone:silicon>);
+ JEI.hideIngredient(<item:tinyredstone:silicon>);
 
  
 

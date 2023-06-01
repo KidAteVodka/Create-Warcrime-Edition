@@ -438,11 +438,6 @@ craftingTable.addShaped("steel_rubberducky_holder", <item:immersiveengineering:s
 craftingTable.addShaped("360_no_sco-ohh..", <item:immersiveengineering:toolupgrade_railgun_scope>, [
     [<item:create:brass_sheet>, <item:extendedgears:iron_cogwheel>, <item:alloyed:steel_sheet>],
     [<item:minecraft:amethyst_shard>, <item:create:brass_nugget>, <item:alloyed:steel_sheet>]]);
- //Advanced Heatsinks
-craftingTable.addShaped("this_is_kinda_op", <item:immersiveengineering:toolupgrade_railgun_capacitors>, [
-    [<item:minecraft:air>, <item:minecraft:air>, <item:immersiveengineering:plate_constantan>],
-    [<item:minecraft:air>, <item:immersiveengineering:plate_constantan>, <item:minecraft:netherite_ingot>],
-    [<item:immersiveengineering:plate_constantan>, <item:minecraft:netherite_ingot>, <item:create:copper_sheet>]]);
  //Breaker Switch
 craftingTable.addShaped("insert_fnaf_powerdown_sound_here", <item:immersiveengineering:breaker_switch>, [
     [<item:create:copper_sheet>, <tag:items:forge:rods/wooden>, <item:create:copper_sheet>],
